@@ -129,6 +129,16 @@ html {
     display: inline;
   }
 }
+@media (max-width: 370px) {
+  .ekran-2 {
+    display: inline;
+  }
+}
+@media (min-width: 359px) {
+  .ekran-2 {
+    display: none;
+  }
+}
 @media (min-width: 480px) {
   .ekran {
     display: none;
