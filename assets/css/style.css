@@ -124,26 +124,6 @@ html {
   margin-left: 3px;
   content: url(../images/header-top-services-arrow.svg);
 }
-@media (max-width: 470px) {
-  .ekran {
-    display: inline;
-  }
-}
-@media (max-width: 370px) {
-  .ekran-2 {
-    display: inline;
-  }
-}
-@media (min-width: 359px) {
-  .ekran-2 {
-    display: none;
-  }
-}
-@media (min-width: 480px) {
-  .ekran {
-    display: none;
-  }
-}
 @media (max-width: 991px) {
   .header-nav {
     margin-top: 27px;
@@ -276,7 +256,8 @@ html {
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .main,
-.call-us {
+.call-us,
+.annotation {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -1032,6 +1013,11 @@ input:invalid:focus {
   border-radius: 2px;
   border: none;
 }
+.footer-midle {
+  /* height: 215px; */
+  border-top: 1px solid #f1f1f7;
+  padding: 32px 0 30px 0;
+}
 @media (max-width: 991px) {
   .footer-top > * {
     flex-direction: column;
@@ -1039,7 +1025,7 @@ input:invalid:focus {
   }
   .subscription-input {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
   .subscription-block,
   .subscription-block > div {
@@ -1049,14 +1035,13 @@ input:invalid:focus {
     margin-top: 23px;
     text-align: center;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 26px;
     color: #212d3a;
+    margin-bottom: 25px;
   }
-}
-.footer-midle {
-  /* height: 215px; */
-  border-top: 1px solid #f1f1f7;
-  padding: 32px 0 30px 0;
+  .footer-midle {
+    padding: 0;
+  }
 }
 .footer-nav {
   display: flex;
@@ -1128,7 +1113,7 @@ input:invalid:focus {
 }
 @media (max-width: 991px) {
   .footer-midle-start {
-    margin-top: 32px;
+    margin-top: 42px;
   }
 }
 .footer-payments {
@@ -1301,19 +1286,20 @@ input:invalid:focus {
 .call-us h1 {
   margin-bottom: 22px;
 }
-/* .call-us::after {
+.call-us::after {
   content: url(../images/SoftStar.svg);
   position: absolute;
-  left: 1707.71px;
+  left: 75%;
   top: 109px;
-} */
+  z-index: -1;
+}
 .call-us::before {
   content: url(../images/Magnet.svg);
   /* background: url(); */
   position: absolute;
   /* width: 398px;
   height: 218px; */
-  left: -40px;
+  left: -0px;
   top: 4px;
   z-index: -1;
 }
@@ -1424,7 +1410,103 @@ input:invalid:focus {
   .adres-1 {
     margin-top: 15px;
   }
-  .call-us::before {
+  .call-us::before,
+  .call-us::after {
     content: none;
+  }
+}
+.annotation {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.annotation img {
+  width: 80%;
+  margin-bottom: 50px;
+}
+.annotation::before {
+  content: url(../images/Warm.svg);
+  /* background: url(); */
+  position: absolute;
+  left: 0px;
+  top: 421px;
+  z-index: -1;
+}
+.annotation::after {
+  content: url(../images/Eye.svg);
+  /* background: url(); */
+  position: absolute;
+  left: 85%;
+  top: 268px;
+  z-index: -1;
+}
+.annotation div {
+  width: 50%;
+}
+.annotation-text h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #212d3a;
+  margin-bottom: 25px;
+}
+.annotation-text p {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.annotation-text blockquote {
+  padding: 17px 28px 17px 28px;
+  background: #f8faff;
+  border-left: 2px solid #4d30ff;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.annotation-date {
+  display: flex;
+  margin-bottom: 12px;
+}
+.annotation-date span {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  color: #adb4c3;
+}
+.annotation-date h6 {
+  margin: 0 7px 0 7px;
+  color: #f1f1f7;
+}
+@media (max-width: 991px) {
+  .annotation::after,
+  .annotation::before {
+    content: none;
+  }
+  .annotation {
+    margin-top: 132px;
+  }
+  .annotation img,
+  .annotation div {
+    width: 100%;
+  }
+  .annotation img {
+    margin-bottom: 25px;
+  }
+  .annotation-text h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .annotation-text p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .annotation-text blockquote {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
