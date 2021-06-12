@@ -257,7 +257,8 @@ html {
 }
 .main,
 .call-us,
-.annotation {
+.annotation,
+.about {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -315,11 +316,11 @@ html {
   /* padding: 18px 25px 14px 25px; */
   /* background: #4d30ff; */
 }
-.main-button-2 {
-  /* background: white; */
-  /* padding: 18px 45px 14px 45px; */
-  /* border: 1.2px solid rgba(241, 241, 247, 1); */
-}
+/* .main-button-2 {
+  background: white;
+  padding: 18px 45px 14px 45px;
+  border: 1.2px solid rgba(241, 241, 247, 1);
+} */
 .main-button-2 > a:hover {
   color: rgb(105, 82, 255);
 
@@ -1487,7 +1488,10 @@ input:invalid:focus {
   .annotation::before {
     content: none;
   }
-  .annotation {
+  .annotation,
+  .about,
+  .main,
+  .call-us {
     margin-top: 132px;
   }
   .annotation img,
@@ -1508,5 +1512,81 @@ input:invalid:focus {
   .annotation-text blockquote {
     font-size: 10px;
     line-height: 16px;
+  }
+}
+.about-start-text h1 {
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  color: #212d3a;
+  margin-bottom: 25px;
+}
+.about-start-text p {
+  font-size: 18px;
+  line-height: 27px;
+  /* display: flex;
+  align-items: center;
+  text-align: justify; */
+  color: #5b6987;
+  margin-bottom: 40px;
+}
+.about-start-buttons {
+  display: flex;
+}
+.about-start-buttons a:nth-child(2) {
+  margin-left: 25px;
+}
+.about-button {
+  font-family: inherit;
+  border: none;
+  border-radius: 2px;
+  padding: 16px 25px 16px 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.0024em;
+  background: #4d30ff;
+  color: #ffffff;
+}
+.about-button-2 {
+  padding: 16px 60px 16px 60px;
+  color: #4d30ff;
+  background: #ffffff;
+  border: 1px solid #f1f1f7;
+}
+@media (max-width: 991px) {
+  .about-start-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-start-buttons a:nth-child(2) {
+    margin-left: 10px;
+  }
+  .about-start-text h1 {
+    font-size: 33px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .about-start-text p {
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #5b6987;
+    margin-bottom: 40px;
+  }
+  .about-button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 452px) {
+  .about-start-buttons a:nth-child(2) {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
