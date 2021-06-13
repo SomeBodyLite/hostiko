@@ -1521,6 +1521,22 @@ input:invalid:focus {
     line-height: 16px;
   }
 }
+.about::before {
+  content: url(../images/Dawn.svg);
+  /* background: url(); */
+  position: absolute;
+  left: 0px;
+  top: 421px;
+  z-index: -1;
+}
+.about::after {
+  content: url(../images/Smile.svg);
+  /* background: url(); */
+  position: absolute;
+  left: 92%;
+  top: 217px;
+  z-index: -1;
+}
 .about-start-text {
   padding-right: 40px;
 }
@@ -1566,6 +1582,10 @@ input:invalid:focus {
   border: 1px solid #f1f1f7;
 }
 @media (max-width: 991px) {
+  .about::after,
+  .about::before {
+    content: none;
+  }
   .about-start-buttons {
     flex-wrap: wrap;
     justify-content: center;
