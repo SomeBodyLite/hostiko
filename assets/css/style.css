@@ -1743,6 +1743,15 @@ input:invalid:focus {
 .tr-head > td:nth-child(3) {
   background: #fcfcfe;
 }
+.tr-head td:nth-child(2) {
+  border-right: none;
+}
+.tr-head td:nth-child(4) {
+  border-left: none;
+}
+.tr-backgrounded > td:nth-child(3) {
+  border: none;
+}
 .pricing-list .price-popular button {
   background: #4d30ff;
   color: white;
