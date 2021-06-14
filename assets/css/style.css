@@ -246,7 +246,8 @@ html {
   font-weight: 600;
 }
 .header-button:hover,
-.call-us-button:hover {
+.call-us-button:hover,
+.v-hosting-button:hover {
   background: #513cd2;
 }
 .header-button {
@@ -265,7 +266,8 @@ html {
 .main,
 .call-us,
 .annotation,
-.about {
+.about,
+.v-hosting {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -1696,4 +1698,88 @@ input:invalid:focus {
   .swiper-container {
     height: auto;
   }
+}
+.v-hosting {
+  font-size: 36px;
+  line-height: 50px;
+  color: #212d3a;
+  text-align: center;
+  margin-bottom: 63px;
+}
+.v-hosting h1 {
+  margin-bottom: 14px;
+}
+.v-hosting h2 {
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+  margin-bottom: 20px;
+}
+.v-hosting-button {
+  font-family: inherit;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.0024em;
+  color: #ffffff;
+  padding: 16px 44px 16px 44px;
+  background: #4d30ff;
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+}
+.pricing-list td {
+  border: 1px solid #f1f1f7;
+  text-align: center;
+  padding: 28px 41px 16px 41px;
+}
+.price-standart h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+  margin-bottom: 7px;
+}
+.price-standart h4 {
+  font-size: 11px;
+  line-height: 9px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+  margin-bottom: 13px;
+}
+.price-standart h5 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: #4d30ff;
+}
+.price-standart h5 > span {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 9px;
+}
+.price-standart a > button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.0024em;
+  color: #4d30ff;
+  background: #f8faff;
+  border-radius: 2px;
+  border: none;
+  padding: 11px 56px 11px 56px;
+  margin-bottom: 15px;
+}
+.price-standart p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.0024em;
+  color: #9483ff;
 }
