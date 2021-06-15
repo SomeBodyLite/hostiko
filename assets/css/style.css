@@ -1967,7 +1967,7 @@ td {
 }
 @media (max-width: 1400px) {
   .tr-head td {
-    padding: 16px 25px 10px 25px;
+    padding: 20px 25px 10px 25px;
   }
   .tr-backgrounded > td:nth-child(1) {
     padding: 13px 120px 13px 30px;
