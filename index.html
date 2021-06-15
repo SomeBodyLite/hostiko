@@ -45,13 +45,23 @@
           <div class="menu-burger__header d-block d-lg-none">
             <span></span>
           </div>
-          <nav class="header-nav">
+          <nav class="header-nav navbar">
             <ul class="header-list flex-wrap">
               <li class="header-item">
                 <a href="#" class="header-link blue">Главная</a>
               </li>
               <li class="header-item">
-                <a href="#" class="header-link item-2">Услуги</a>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="" class="header-link item-2">Услуги</a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Виртуальный хостинг</a>
+                    <a href="#">Виртуальные серверы</a>
+                    <a href="#">Выделенные серверы</a>
+                    <a href="#">Защита от DDoS-атак</a>
+                  </div>
+                </div>
               </li>
               <li class="header-item">
                 <a href="./contacts.html" class="header-link">Контакты</a>
