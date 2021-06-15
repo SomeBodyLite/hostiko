@@ -187,8 +187,8 @@ html {
   border-top: 1px solid #f1f1f7;
 }
 .number > a,
-.language > span,
-.currency > span {
+.language span,
+.currency span {
   font-weight: normal;
   font-size: 14px;
   line-height: 15px;
@@ -198,9 +198,12 @@ html {
   transition: all 0.2s ease-out, color 0.2s ease-out;
 }
 .number > a:hover,
-.language > span:hover,
-.currency > span:hover {
+.language span:hover,
+.currency span:hover {
   color: #cad2e4;
+}
+.currency .dropdown-content {
+  min-width: 140px;
 }
 .language > span,
 .currency > span {
@@ -214,7 +217,7 @@ html {
 .header-list {
   display: flex;
 }
-.language > span::after {
+.language span::after {
   display: inherit;
   margin-left: 3px;
   content: url(../images/header-top-services-arrow.svg);
