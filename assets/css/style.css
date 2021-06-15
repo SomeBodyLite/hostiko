@@ -77,11 +77,18 @@ html {
   text-decoration: none;
 }
 
+.dropdown-content hr {
+  width: 75%;
+  border: none;
+  border-top: 1px #f1f1f7 solid;
+  margin: auto;
+}
+
 .dropdown-content a {
   font-weight: 500;
   font-size: 18px;
   line-height: 55px;
-  padding: 8px 32px;
+  padding: 0px 32px;
   -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
   transition: all 0.2s ease-out, color 0.2s ease-out;
 }
