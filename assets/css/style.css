@@ -91,6 +91,8 @@ html {
   padding: 0px 32px;
   -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
   transition: all 0.2s ease-out, color 0.2s ease-out;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown {
@@ -134,7 +136,7 @@ html {
   float: none;
   color: #212d3a;
   text-decoration: none;
-  display: block;
+  /* display: block; */
   text-align: left;
 }
 
@@ -146,6 +148,7 @@ html {
   /* right: 99%; */
   left: 0px;
   content: url(../images/dropdown\ a.svg);
+  display: inherit;
 }
 
 .dropdown:hover .dropdown-content {
