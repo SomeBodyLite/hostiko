@@ -80,8 +80,8 @@ html {
 .dropdown-content a {
   font-weight: 500;
   font-size: 18px;
-  line-height: 20px;
-  padding: 16px 28px;
+  line-height: 55px;
+  padding: 8px 32px;
   -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
   transition: all 0.2s ease-out, color 0.2s ease-out;
 }
@@ -135,7 +135,8 @@ html {
 }
 .dropdown-content a:hover::before {
   position: absolute;
-  right: 99%;
+  /* right: 99%; */
+  left: 0px;
   content: url(../images/dropdown\ a.svg);
 }
 
