@@ -222,7 +222,7 @@ html {
   margin-left: 3px;
   content: url(../images/header-top-services-arrow.svg);
 }
-.currency > span::after {
+.currency span::after {
   display: inherit;
   margin-left: 3px;
   content: url(../images/header-top-services-arrow.svg);
@@ -499,7 +499,8 @@ html {
     text-align: center;
   }
 }
-.services-bg {
+.services-bg,
+.advantages-bg {
   margin-bottom: 75px;
   position: relative;
   padding: 75px 0 75px 0;
@@ -512,6 +513,24 @@ html {
   top: 0;
   left: -8%;
   right: 100%;
+  bottom: 0;
+}
+.advantages-bg::before {
+  content: "";
+  background: #f8faff;
+  position: absolute;
+  top: 0;
+  left: -7%;
+  right: 100%;
+  bottom: 0;
+}
+.advantages-bg::after {
+  content: "";
+  background: #f8faff;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: -7%;
   bottom: 0;
 }
 .services-bg::after {
