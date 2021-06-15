@@ -1972,7 +1972,8 @@ td {
   .tr-backgrounded > td:nth-child(1) {
     padding: 13px 120px 13px 30px;
   }
-  .tr-services p {
+  .tr-services p,
+  .tr-services span {
     font-size: 14px;
   }
   .tr-backgrounded p {
