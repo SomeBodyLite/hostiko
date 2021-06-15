@@ -1965,3 +1965,20 @@ td {
 .price-popular h5 {
   font-weight: 600;
 }
+@media (max-width: 1400px) {
+  .tr-head td {
+    padding: 16px 25px 10px 25px;
+  }
+  .tr-backgrounded > td:nth-child(1) {
+    padding: 13px 120px 13px 30px;
+  }
+  .tr-services p {
+    font-size: 14px;
+  }
+  .tr-backgrounded p {
+    font-size: 16px;
+  }
+  .td-head {
+    left: 45px;
+  }
+}
