@@ -31,7 +31,9 @@ svg {
 body {
   width: 100%;
 }
-
+a:focus {
+  outline: none;
+}
 header {
   z-index: 99;
   position: fixed;
