@@ -125,6 +125,7 @@ html {
   z-index: 1;
   -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
   transition: all 0.2s ease-out, color 0.2s ease-out;
+  padding: 8px 0;
 }
 .dropbtn {
   color: #5b6987;
