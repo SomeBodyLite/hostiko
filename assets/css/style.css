@@ -776,7 +776,8 @@ html {
 .contact-form,
 .contacts-form,
 .adres,
-.pricing-list {
+.pricing-list,
+.faq {
   margin-bottom: 75px;
 }
 .services-bg > .advantages {
@@ -2065,6 +2066,7 @@ td {
   color: #03b5d2;
   border: 1px solid #03b5d2;
 }
+
 .accordion button .accordion-title {
   /* padding: 1em 1.5em 1em 0; */
   font-family: "Mazzard", sans-serif;
@@ -2106,4 +2108,66 @@ td {
   color: #5b6987;
   padding: 25px 0;
   margin: 0 57px;
+}
+@media (max-width: 1400px) {
+  .accordion button .accordion-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .v-hosting h1 {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .v-hosting h2 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .v-hosting-button {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .services > h1,
+  .advantages > h1,
+  .title > h1,
+  .form > h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .block-text > h3 {
+    font-size: 17px;
+    line-height: 15px;
+  }
+  .block-text > p {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .advantages-blocks > * {
+    margin-right: 0px;
+  }
+  .faq h2 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .accordion button {
+    padding: 21px 27px 17px 27px;
+  }
+  .accordion button .accordion-title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .accordion button .icon {
+    width: 11px;
+  }
+  .accordion .accordion-content p {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 17px 0 20px 0;
+    margin: 0 27px;
+  }
+  .faq {
+    margin-bottom: 50px;
+  }
 }
