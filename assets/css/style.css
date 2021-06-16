@@ -2275,6 +2275,12 @@ td {
   position: relative;
   top: 1px;
 }
+@media (max-width: 350px) {
+  .tabs > label {
+    font-size: 12px;
+    padding: 0;
+  }
+}
 
 .tabs > label:not(:first-of-type) {
   border-left: none;
