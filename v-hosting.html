@@ -102,7 +102,7 @@
             <button class="v-hosting-button">Выбрать тариф</button>
           </a>
         </div>
-        <div class="pricing-list">
+        <div class="pricing-list d-none d-lg-flex">
           <table>
             <tr class="tr-head">
               <td style="border: none; padding: 0"></td>
@@ -233,6 +233,7 @@
             </tr>
           </table>
         </div>
+        <div class="pricing-list-mobile"></div>
         <div class="advantages-bg">
           <div class="advantages">
             <h1>Почему <span class="blue-bold">выбирают нас?</span></h1>
@@ -270,7 +271,75 @@
             </div>
           </div>
         </div>
+        <div class="faq" id="faq">
+          <h2>Остались <span class="blue-bold">вопросы?</span></h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="accordion-title"
+                  >Как мне выбрать тариф хостинга для своих задач?</span
+                >
+                <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+              </button>
+              <div class="accordion-content">
+                <p>Рыба <br /><br />Нет блять слон</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false">
+                <span class="accordion-title">Что такое хостинг для сайта?</span
+                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Хостинг — услуга по предоставлению ресурсов для размещения
+                  информации на сервере, постоянно имеющем доступ к сети.
+                  <br /><br />
+                  Обычно услуга хостинга входит в пакет по обслуживанию сайта и
+                  подразумевает как минимум услугу размещения файлов сайта на
+                  сервере, на котором запущено ПО, необходимое для обработки
+                  запросов к этим файлам (веб-сервер). Как правило, в
+                  обслуживание уже входит предоставление места для почтовой
+                  корреспонденции, баз данных, DNS, файлового хранилища на
+                  специально выделенном файл-сервере и т. п., а также поддержка
+                  функционирования соответствующих сервисов.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title"
+                  >Какую поддержку вы предоставляете?</span
+                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title">Как мне создать свой сайт?</span
+                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./assets/js/faq.js"></script>
 </html>
