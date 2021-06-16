@@ -2341,9 +2341,6 @@ td {
 .tabs > *:nth-child(10) {
   border: 1px solid #4d30ff;
 }
-.tabs > *:nth-child(10) .mobile-price-content > div {
-  border-top: 1px solid #4d30ff;
-}
 .col-12 .price-popular .td-head {
   position: relative;
   /* margin-right: 100px; */
