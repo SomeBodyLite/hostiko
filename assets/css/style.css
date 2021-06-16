@@ -2225,7 +2225,7 @@ td {
   padding: 5px 10px;
   text-decoration: none;
   transition: 0.2s;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid #f1f1f7;
 }
 .pricing-list-mobile input:checked + label {
   border-bottom: 2px solid #4d30ff;
@@ -2268,14 +2268,14 @@ td {
 
 .tabs > label {
   user-select: none;
-  padding: 2px 4px;
+  padding: 2px 6px;
   font-size: 15px;
   line-height: 150%;
   cursor: pointer;
   position: relative;
   top: 1px;
 }
-@media (max-width: 350px) {
+@media (max-width: 354px) {
   .tabs > label {
     font-size: 12px;
     padding: 0;
