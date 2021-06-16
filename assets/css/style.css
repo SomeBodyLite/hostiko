@@ -2078,26 +2078,6 @@ td {
   right: 0;
   transition: all 0.3s ease-in-out;
 }
-/* .accordion button .icon::before {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
-  background: currentColor;
-} */
-/* .accordion button .icon::after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-} */
 .accordion button[aria-expanded="true"] {
   color: #03b5d2;
 }
@@ -2124,5 +2104,6 @@ td {
   line-height: 22px;
   letter-spacing: -0.24px;
   color: #5b6987;
-  padding: 25px 57px;
+  padding: 25px 0;
+  margin: 0 57px;
 }
