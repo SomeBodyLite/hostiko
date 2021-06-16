@@ -25,12 +25,38 @@
               <a href="tel:+75001002255">+7 500 100-22-55 </a>
             </div>
             <div class="language">
-              <img src="./assets/images/language.svg" alt="" />
-              <span>Русский</span>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  <img src="./assets/images/language.svg" alt="" />
+                  <a href="#" class="header-link">
+                    <span>Русский</span>
+                  </a>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Русский язык</a>
+                  <hr />
+                  <a href="#">English language</a>
+                  <hr />
+                  <a href="#">Українська мова</a>
+                </div>
+              </div>
             </div>
             <div class="currency">
-              <img src="./assets/images/currency.svg" alt="" />
-              <span>RUB</span>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  <img src="./assets/images/currency.svg" alt="" />
+                  <a href="#" class="header-link">
+                    <span>RUB</span>
+                  </a>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">RUB</a>
+                  <hr />
+                  <a href="#">USD</a>
+                  <hr />
+                  <a href="#">UAH</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -45,13 +71,38 @@
           <div class="menu-burger__header d-block d-lg-none">
             <span></span>
           </div>
-          <nav class="header-nav">
+          <nav class="header-nav navbar">
             <ul class="header-list flex-wrap">
               <li class="header-item">
-                <a href="#" class="header-link">Главная</a>
+                <a href="./index.html" class="header-link">Главная</a>
               </li>
-              <li class="header-item">
-                <a href="#" class="header-link blue item-2">Услуги</a>
+              <li class="header-item d-none d-lg-flex">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="#" class="header-link item-2 blue">Услуги</a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a class="blue" href="#">Виртуальный хостинг</a>
+                    <hr />
+                    <a href="#">Виртуальные серверы</a>
+                    <hr />
+                    <a href="#">Выделенные серверы</a>
+                    <hr />
+                    <a href="#">Защита от DDoS-атак</a>
+                  </div>
+                </div>
+              </li>
+              <li class="header-item d-flex d-lg-none">
+                <a href="#" class="header-link blue">Виртуальный хостинг</a>
+              </li>
+              <li class="header-item d-flex d-lg-none">
+                <a href="#" class="header-link">Виртуальные серверы</a>
+              </li>
+              <li class="header-item d-flex d-lg-none">
+                <a href="#" class="header-link">Выделенные серверы</a>
+              </li>
+              <li class="header-item d-flex d-lg-none">
+                <a href="#" class="header-link">Защита от DDoS-атак</a>
               </li>
               <li class="header-item">
                 <a href="./contacts.html" class="header-link">Контакты</a>
@@ -233,7 +284,191 @@
             </tr>
           </table>
         </div>
-        <div class="pricing-list-mobile"></div>
+        <div class="pricing-list-mobile d-flex d-lg-none">
+          <div class="tabs">
+            <input
+              type="radio"
+              name="tab-btn"
+              id="tab-btn-1"
+              value=""
+              checked
+            />
+            <label for="tab-btn-1">STANDART</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+            <label for="tab-btn-2">MEDIUM</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
+            <label for="tab-btn-3">BUSINESS</label>
+            <input type="radio" name="tab-btn" id="tab-btn-4" value="" />
+            <label for="tab-btn-4">PREMIUM</label>
+            <div class="col-12" id="content-1">
+              <div class="price-standart">
+                <h3>Тариф&nbsp;«STANDART»</h3>
+                <h4>Для самых простых лендингов</h4>
+                <h5>50 ₽<span>/месяц</span></h5>
+                <a href=""><button>Заказать</button></a>
+                <p>Тест 7 дней</p>
+              </div>
+              <div class="mobile-price-content">
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <span>2 ГБ</span>
+                </div>
+                <div>
+                  <p>Защита от DDoS-атак</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Доступ по протоколу</p>
+                  <span>FTP</span>
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12" id="content-2">
+              <div class="price-popular">
+                <div class="td-head">Популярный</div>
+                <div class="price-standart">
+                  <h3>Тариф «MEDIUM»</h3>
+                  <h4>Для многостраничных сайтов</h4>
+                  <h5>129 ₽<span>/месяц</span></h5>
+                  <a href=""><button>Заказать</button></a>
+                  <p>Тест 7 дней</p>
+                </div>
+              </div>
+              <div class="mobile-price-content">
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <span>7 ГБ</span>
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Защита от DDoS-атак</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Доступ по протоколу</p>
+                  <span>FTP/SSH</span>
+                </div>
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12" id="content-3">
+              <div class="price-standart">
+                <h3>Тариф «BUSINESS»</h3>
+                <h4>Для интернет-магазина</h4>
+                <h5>199 ₽<span>/месяц</span></h5>
+                <a href=""><button>Заказать</button></a>
+                <p>Тест 7 дней</p>
+              </div>
+              <div class="mobile-price-content">
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <span>15 ГБ</span>
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Защита от DDoS-атак</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Бесконечный трафик</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Доступ по протоколу</p>
+                  <span>FTP/SSH</span>
+                </div>
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12" id="content-4">
+              <div class="price-standart">
+                <h3>Тариф «PREMIUM»</h3>
+                <h4>Для абсолютно любого сайта</h4>
+                <h5>259 ₽<span>/месяц</span></h5>
+                <a href=""><button>Заказать</button></a>
+                <p>Тест 7 дней</p>
+              </div>
+              <div class="mobile-price-content">
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <span>25 ГБ</span>
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Защита от DDoS-атак</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Бесконечный трафик</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Доступ по протоколу</p>
+                  <span>FTP/SSH</span>
+                </div>
+                <div>
+                  <p>Объём накопителя NVME</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Любое количество сайтов</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+                <div>
+                  <p>Домен в подарок</p>
+                  <img src="./assets/images/table/check.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="advantages-bg">
           <div class="advantages">
             <h1>Почему <span class="blue-bold">выбирают нас?</span></h1>
@@ -282,7 +517,19 @@
                 <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
               </button>
               <div class="accordion-content">
-                <p>Рыба <br /><br />Нет блять слон</p>
+                <p>
+                  Товарищи! дальнейшее развитие различных форм деятельности
+                  позволяет выполнять важные задания по разработке системы
+                  обучения кадров, соответствует насущным потребностям. Таким
+                  образом рамки и место обучения кадров требуют определения и
+                  уточнения направлений прогрессивного развития. <br /><br />
+                  Разнообразный и богатый опыт реализация намеченных плановых
+                  заданий в значительной степени обуславливает создание
+                  существенных финансовых и административных условий. Идейные
+                  соображения высшего порядка, а также дальнейшее развитие
+                  различных форм деятельности позволяет оценить значение форм
+                  развития.
+                </p>
               </div>
             </div>
             <div class="accordion-item">
@@ -559,4 +806,6 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./assets/js/faq.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="assets/js/menu.js"></script>
 </html>
