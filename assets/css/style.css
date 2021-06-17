@@ -2549,7 +2549,9 @@ td {
 
   color: #212d3a;
 }
-
+.tabs > * {
+  transition: all 0.9s ease-in-out;
+}
 .tabs-triggers {
   display: flex;
 }
@@ -2583,6 +2585,9 @@ td {
 .vps-tarif {
   padding: 34px 49px;
   border-bottom: 1px solid #f1f1f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .vps-tarif:last-child {
   border: none;
@@ -2603,8 +2608,73 @@ td {
 }
 .vps-tarif-header hr {
   border: none;
+  width: 95px;
+  margin: 13px 0 11px 0;
   border-bottom: 1px solid #f1f1f7;
 }
 .vps-tarif-header p span {
   color: #5b6987;
+}
+.vps-price {
+  display: flex;
+  margin-bottom: 10px;
+}
+.vps-price h5 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #212d3a;
+  margin-right: 6px;
+  text-align: center;
+}
+.vps-price h5:last-child {
+  margin-right: 0;
+}
+.vps-price h5 span {
+  font-weight: normal;
+  font-size: 10.8589px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+}
+.vps-button button {
+  border: none;
+  padding: 11px 51px;
+  background: #4d30ff;
+  border-radius: 2px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.0024em;
+  color: #ffffff;
+}
+.property {
+  display: flex;
+  align-items: center;
+}
+.property > * {
+  margin-right: 50px;
+}
+.property > *:last-child {
+  margin-right: 0px;
+}
+.property p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+}
+.property span {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.property hr {
+  border: none;
+  width: 90%;
+  margin: 13px 0 11px 0;
+  border-bottom: 1px solid #f1f1f7;
 }
