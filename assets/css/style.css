@@ -2541,53 +2541,70 @@ td {
   color: #4d30ff;
   border-bottom: 1px solid #4d30ff;
 }
-.tabs {
-  margin: 0px 0px 50px 0px;
-}
-.tabs__items {
-  display: flex;
-}
-.tabs__item {
-  flex: 0 1 50%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #adb4c3;
-  text-decoration: none;
-}
-.tabs__item span {
-  position: relative;
-  z-index: 2;
-}
-.tabs__block {
-  position: relative;
-  padding: 20px;
+.select-buttons > div p {
+  font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 150%;
+  letter-spacing: -0.24px;
+
+  color: #212d3a;
+}
+
+.tabs-triggers {
+  display: flex;
+}
+.tabs-triggers__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.24px;
+  color: #adb4c3;
+  text-align: center;
+  padding: 4px 8px;
+  text-decoration: none;
+  flex-grow: 1;
+  border-bottom: 1px solid #f1f1f7;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs-content {
+  background: white;
+  margin-top: 25px;
+}
+.tabs-content__item {
   display: none;
+  border-radius: 2px;
+  border: 1px solid #f1f1f7;
 }
-.tabs__block::before {
-  content: "";
-  height: 50px;
-  width: 10%;
-  position: absolute;
-  top: -50px;
-}
-.tabs__block:nth-child(1) {
-  border: 1px solid tomato;
-}
-.tabs__block:nth-child(1)::before {
-  background-color: tomato;
-  left: 9%;
-}
-.tabs__block:nth-child(2) {
-  border: 1px solid teal;
-}
-.tabs__block:nth-child(2)::before {
-  background-color: teal;
-  left: 20%;
-}
-.tabs__block:target {
+.tabs-content__item--active {
   display: block;
+}
+.vps-tarif {
+  padding: 34px 49px;
+  border-bottom: 1px solid #f1f1f7;
+}
+.vps-tarif:last-child {
+  border: none;
+}
+.vps-tarif-header h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+
+  color: #212d3a;
+}
+.vps-tarif-header p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+  color: #adb4c3;
+}
+.vps-tarif-header hr {
+  border: none;
+  border-bottom: 1px solid #f1f1f7;
+}
+.vps-tarif-header p span {
+  color: #5b6987;
 }

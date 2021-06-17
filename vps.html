@@ -149,14 +149,14 @@
           <div class="select-buttons d-flex">
             <div class="select-buttons-1 d-flex">
               <p>Процессор:</p>
-              <nav class="tabs__items">
-                <a href="#tab_01" class="tabs__item"
-                  ><span>Intel Xeon E5-2680 v4</span></a
+              <div class="tabs-triggers">
+                <a href="#tab-1" class="tabs-triggers__item"
+                  >Intel Xeon E5-2680 v4</a
                 >
-                <a href="#tab_02" class="tabs__item"
-                  ><span>Intel Core i9 11900k</span></a
+                <a href="#tab-2" class="tabs-triggers__item"
+                  >Intel Core i9 11900k</a
                 >
-              </nav>
+              </div>
             </div>
             <div class="select-buttons-2 d-flex">
               <p>Локация:</p>
@@ -169,28 +169,74 @@
             </div>
           </div>
           <div class="tabs">
-            <div class="tabs__body">
-              <div id="tab_01" class="tabs__block">
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif russia">russia</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif russia">russia</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif ukraina">ukraina</div>
+            <div class="tabs-content">
+              <div id="tab-1" class="tabs-content__item">
+                <div class="vps-tarif russia">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-SMP»</h3>
+                    <hr />
+                    <p>Локация: <span>🇷🇺 Россия</span></p>
+                    <p>Процессор: <span>Intel Xeon E5-2680 v4</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif germany">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-MD»</h3>
+                    <hr />
+                    <p>Локация: <span>🇩🇪 Германия</span></p>
+                    <p>Процессор: <span>Intel Xeon E5-2680 v4</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif ukraina">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-PRO»</h3>
+                    <hr />
+                    <p>Локация: <span>🇺🇦 Украина</span></p>
+                    <p>Процессор: <span>Intel Xeon E5-2680 v4</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif russia">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-VIP»</h3>
+                    <hr />
+                    <p>Локация: <span>🇷🇺 Россия</span></p>
+                    <p>Процессор: <span>Intel Xeon E5-2680 v4</span></p>
+                  </div>
+                </div>
               </div>
-              <div id="tab_02" class="tabs__block">
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif russia">russia</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif russia">russia</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif ukraina">ukraina</div>
-                <div class="vps-tarif germany">germany</div>
-                <div class="vps-tarif ukraina">ukraina</div>
+              <div id="tab-2" class="tabs-content__item">
+                <div class="vps-tarif russia">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-SMP»</h3>
+                    <hr />
+                    <p>Локация: <span>🇷🇺 Россия</span></p>
+                    <p>Процессор: <span>Intel Core i9 11900k</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif germany">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-MD»</h3>
+                    <hr />
+                    <p>Локация: <span>🇩🇪 Германия</span></p>
+                    <p>Процессор: <span>Intel Core i9 11900k</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif ukraina">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-PRO»</h3>
+                    <hr />
+                    <p>Локация: <span>🇺🇦 Украина</span></p>
+                    <p>Процессор: <span>Intel Core i9 11900k</span></p>
+                  </div>
+                </div>
+                <div class="vps-tarif russia">
+                  <div class="vps-tarif-header">
+                    <h3>Тариф «VPS-VIP»</h3>
+                    <hr />
+                    <p>Локация: <span>🇷🇺 Россия</span></p>
+                    <p>Процессор: <span>Intel Core i9 11900k</span></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -564,4 +610,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/filter.js"></script>
+  <script src="assets/js/tab-select.js"></script>
 </html>
