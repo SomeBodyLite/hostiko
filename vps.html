@@ -146,6 +146,57 @@
       <div class="row">
         <div class="vps">
           <h1>Виртуальные <span class="blue-bold">серверы</span></h1>
+          <div class="select-buttons d-flex">
+            <div class="select-buttons-1 d-flex">
+              <p>Процессор:</p>
+              <div class="tabs-2">
+                <input
+                  type="radio"
+                  name="tab-btn"
+                  id="tab-btn-1-2"
+                  value=""
+                  checked
+                />
+                <label for="tab-btn-1-2">Intel Xeon E5-2680 v4</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2-2" value="" />
+                <label for="tab-btn-2-2">Intel Core i9 11900k</label>
+
+                <div id="content-1-2">
+                  Intel Xeon E5-2680 v4
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif russia">russia</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif russia">russia</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                </div>
+                <div id="content-2-2">
+                  Intel Core i9 11900k
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif russia">russia</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif russia">russia</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                  <div class="vps-tarif germany">germany</div>
+                  <div class="vps-tarif ukraina">ukraina</div>
+                </div>
+              </div>
+            </div>
+            <div class="select-buttons-2 d-flex">
+              <p>Локация:</p>
+              <ul class="country-list d-flex">
+                <li class="country-list-item item-active" data-id="all">Все</li>
+                <li class="country-list-item" data-id="russia">🇷🇺 Россия</li>
+                <li class="country-list-item" data-id="germany">🇩🇪 Германия</li>
+                <li class="country-list-item" data-id="ukraina">🇺🇦 Украина</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="add-services">
           <h1>Дополнительные <span class="blue-bold">услуги</span></h1>
@@ -515,4 +566,5 @@
   <script src="./assets/js/faq.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="assets/js/menu.js"></script>
+  <script src="assets/js/filter.js"></script>
 </html>
