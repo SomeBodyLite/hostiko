@@ -2254,7 +2254,7 @@ td {
   color: #4d30ff;
   transition: 0.3s;
 }
-.tabs {
+.tabs-1 {
   font-size: 0;
   align-items: center;
   display: flex;
@@ -2262,11 +2262,11 @@ td {
   justify-content: space-between;
 }
 
-.tabs > input[type="radio"] {
+.tabs-1 > input[type="radio"] {
   display: none;
 }
 
-.tabs > div {
+.tabs-1 > div {
   /* скрыть контент по умолчанию */
   display: none;
   margin: 50px 0;
@@ -2278,17 +2278,17 @@ td {
 }
 
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked ~ #content-1,
-#tab-btn-2:checked ~ #content-2,
-#tab-btn-3:checked ~ #content-3,
-#tab-btn-4:checked ~ #content-4 {
+#tab-btn-1-1:checked ~ #content-1-1,
+#tab-btn-2-1:checked ~ #content-2-1,
+#tab-btn-3-1:checked ~ #content-3-1,
+#tab-btn-4-1:checked ~ #content-4-1 {
   display: flex;
   transition: 0.3s;
   flex-direction: column;
   align-items: center;
 }
 
-.tabs > label {
+.tabs-1 > label {
   user-select: none;
   padding: 2px 6px;
   font-size: 15px;
@@ -2298,17 +2298,17 @@ td {
   top: 1px;
 }
 @media (max-width: 354px) {
-  .tabs > label {
+  .tabs-1 > label {
     font-size: 12px;
     padding: 0;
   }
 }
 
-.tabs > label:not(:first-of-type) {
+.tabs-1 > label:not(:first-of-type) {
   border-left: none;
 }
 
-.tabs > input[type="radio"]:checked + label {
+.tabs-1 > input[type="radio"]:checked + label {
   background-color: #fff;
 }
 
@@ -2366,7 +2366,7 @@ td {
 .mobile-price-content span {
   color: #212d3a;
 }
-.tabs > *:nth-child(10) {
+.tabs-1 > *:nth-child(10) {
   border: 1px solid #4d30ff;
 }
 .col-12 .price-popular .td-head {
@@ -2513,63 +2513,6 @@ td {
   transition: all 0.2s ease-in-out;
 }
 
-.tabs-2 {
-  font-size: 0;
-  position: relative;
-}
-
-.tabs-2 > input[type="radio"] {
-  display: none;
-}
-
-.tabs-2 > div {
-  /* скрыть контент по умолчанию */
-  display: none;
-  border: 1px solid #f1f1f7;
-  /* box-sizing: border-box; */
-  border-radius: 2px;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin-top: 25px;
-  /* position: absolute;
-  left: -120px; */
-}
-
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1-2:checked ~ #content-1-2,
-#tab-btn-2-2:checked ~ #content-2-2 {
-  display: block;
-}
-
-.tabs-2 > label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  border-bottom: 1px solid #f1f1f7;
-  padding: 4px 10px;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  top: 1px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: -0.24px;
-  color: #adb4c3;
-}
-
-.tabs-2 > label:not(:first-of-type) {
-  border-left: none;
-}
-
-.tabs-2 > input[type="radio"]:checked + label {
-  color: #4d30ff;
-  border-bottom: 1px solid #4d30ff;
-}
-
 .select-buttons-1 {
   margin-right: 50px;
 }
@@ -2597,4 +2540,54 @@ td {
 .item-active {
   color: #4d30ff;
   border-bottom: 1px solid #4d30ff;
+}
+.tabs {
+  margin: 0px 0px 50px 0px;
+}
+.tabs__items {
+  display: flex;
+}
+.tabs__item {
+  flex: 0 1 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #adb4c3;
+  text-decoration: none;
+}
+.tabs__item span {
+  position: relative;
+  z-index: 2;
+}
+.tabs__block {
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  display: none;
+}
+.tabs__block::before {
+  content: "";
+  height: 50px;
+  width: 10%;
+  position: absolute;
+  top: -50px;
+}
+.tabs__block:nth-child(1) {
+  border: 1px solid tomato;
+}
+.tabs__block:nth-child(1)::before {
+  background-color: tomato;
+  left: 9%;
+}
+.tabs__block:nth-child(2) {
+  border: 1px solid teal;
+}
+.tabs__block:nth-child(2)::before {
+  background-color: teal;
+  left: 20%;
+}
+.tabs__block:target {
+  display: block;
 }
