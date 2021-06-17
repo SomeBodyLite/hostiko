@@ -379,7 +379,8 @@ html {
 .call-us,
 .annotation,
 .about,
-.v-hosting {
+.v-hosting,
+.vps {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -1614,7 +1615,9 @@ input:invalid:focus {
 .annotation div {
   width: 50%;
 }
-.annotation-text h2 {
+.annotation-text h2,
+.vps h1,
+.add-services h1 {
   font-size: 36px;
   line-height: 36px;
   color: #212d3a;
@@ -2361,4 +2364,7 @@ td {
 }
 .col-12 .price-popular .price-standart {
   margin-top: 10px;
+}
+.add-services h1 {
+  margin-bottom: 50px;
 }
