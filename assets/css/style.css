@@ -785,7 +785,9 @@ html {
 .contacts-form,
 .adres,
 .pricing-list,
-.faq {
+.faq,
+.add-services,
+.discounts-blocks {
   margin-bottom: 75px;
 }
 .services-bg > .advantages {
@@ -1617,7 +1619,8 @@ input:invalid:focus {
 }
 .annotation-text h2,
 .vps h1,
-.add-services h1 {
+.add-services h1,
+.discounts h1 {
   font-size: 36px;
   line-height: 36px;
   color: #212d3a;
@@ -2365,6 +2368,77 @@ td {
 .col-12 .price-popular .price-standart {
   margin-top: 10px;
 }
-.add-services h1 {
+.add-services h1,
+.discounts h1 {
   margin-bottom: 50px;
+}
+.add-services-line {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #f1f1f7;
+  margin-bottom: 50px;
+}
+.add-services-line:last-child {
+  margin-bottom: 0;
+}
+.add-services-line p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+}
+.add-services-line p span {
+  color: #adb4c3;
+}
+.add-services-line em {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+}
+.vps::after {
+  content: url(../images/Depth.svg);
+  position: absolute;
+  right: 0;
+  top: 248px;
+  z-index: -1;
+}
+.vps::before {
+  content: url(../images/Butterfly.svg);
+  /* background: url(); */
+  position: absolute;
+  /* width: 398px;
+  height: 218px; */
+  left: -0px;
+  top: 401px;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .vps::before,
+  .vps::after {
+    content: none;
+  }
+}
+.discounts {
+  text-align: center;
+}
+.discounts-blocks {
+  display: flex;
+  justify-content: center;
+}
+.discounts-blocks p {
+  padding: 25px 40px 20px 40px;
+  border: 1px solid #f1f1f7;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+}
+.discounts-blocks p:nth-child(2) {
+  border-right: 0;
+  border-left: 0;
 }
