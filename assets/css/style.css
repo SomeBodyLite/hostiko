@@ -359,7 +359,9 @@ html {
 }
 .header-button:hover,
 .call-us-button:hover,
-.v-hosting-button:hover {
+.v-hosting-button:hover,
+.pricing-list .price-popular button:hover,
+.individual-help-content button:hover {
   background: #513cd2;
 }
 .header-button {
@@ -380,7 +382,8 @@ html {
 .annotation,
 .about,
 .v-hosting,
-.vps {
+.vps,
+.dedic {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -422,7 +425,8 @@ html {
   -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
-.main-button-1 > a:hover {
+.main-button-1 > a:hover,
+.about-button:hover {
   background: #513cd2;
 }
 .main-button-1 > a {
@@ -443,7 +447,8 @@ html {
   padding: 18px 45px 14px 45px;
   border: 1.2px solid rgba(241, 241, 247, 1);
 } */
-.main-button-2 > a:hover {
+.main-button-2 > a:hover,
+.about-button-2:hover {
   color: rgb(105, 82, 255);
 
   background: #f8faff;
@@ -787,7 +792,8 @@ html {
 .pricing-list,
 .faq,
 .add-services,
-.discounts-blocks {
+.discounts-blocks,
+.individual-help {
   margin-bottom: 75px;
 }
 .services-bg > .advantages {
@@ -1620,7 +1626,8 @@ input:invalid:focus {
 .annotation-text h2,
 .vps h1,
 .add-services h1,
-.discounts h1 {
+.discounts h1,
+.dedic h1 {
   font-size: 36px;
   line-height: 36px;
   color: #212d3a;
@@ -1666,7 +1673,9 @@ input:invalid:focus {
   .about,
   .main,
   .call-us,
-  .v-hosting {
+  .v-hosting,
+  .vps,
+  .dedic {
     margin-top: 132px;
   }
   .annotation img,
@@ -1742,12 +1751,16 @@ input:invalid:focus {
   letter-spacing: -0.0024em;
   background: #4d30ff;
   color: #ffffff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .about-button-2 {
   padding: 16px 60px 16px 60px;
   color: #4d30ff;
   background: #ffffff;
   border: 1px solid #f1f1f7;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 991px) {
   .about::after,
@@ -2036,6 +2049,8 @@ td {
   border: none;
   padding: 11px 56px 11px 56px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
 }
 .price-standart p {
   font-weight: 500;
@@ -2049,7 +2064,7 @@ td {
 }
 @media (max-width: 1400px) {
   .tr-head td {
-    padding: 20px 25px 10px 25px;
+    padding: 20px 24px 10px 24px;
   }
   .tr-backgrounded > td:nth-child(1) {
     padding: 13px 120px 13px 30px;
@@ -2441,4 +2456,59 @@ td {
 .discounts-blocks p:nth-child(2) {
   border-right: 0;
   border-left: 0;
+}
+.dedic::after {
+  content: url(../images/party.svg);
+  position: absolute;
+  right: 0;
+  top: 194px;
+  z-index: -1;
+}
+.dedic::before {
+  content: url(../images/threeangle.svg);
+  /* background: url(); */
+  position: absolute;
+  /* width: 398px;
+  height: 218px; */
+  left: -0px;
+  top: 494px;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .dedic::before,
+  .dedic::after {
+    content: none;
+  }
+}
+.individual-help {
+  background: #f8faff;
+  padding: 28px 0;
+}
+.individual-help,
+.individual-help-content {
+  width: 100%;
+  display: flex;
+}
+.individual-help-content,
+.individual-help-content > * {
+  margin: auto;
+}
+.individual-help-content p {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  color: #212d3a;
+}
+.individual-help-content button {
+  border: none;
+  font-family: inherit;
+  background: #4d30ff;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.0024em;
+  color: #ffffff;
+  padding: 13px 23px;
+  transition: all 0.2s ease-in-out;
 }
