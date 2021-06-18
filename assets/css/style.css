@@ -2539,7 +2539,7 @@ td {
 }
 .item-active {
   color: #4d30ff;
-  border-bottom: 1px solid #4d30ff;
+  border-bottom: 2px solid #4d30ff;
 }
 .select-buttons > div p {
   font-weight: 500;
@@ -2582,6 +2582,10 @@ td {
 .tabs-content__item--active {
   display: block;
 }
+.tabs-triggers__item--active {
+  color: #4d30ff;
+  border-bottom: 2px solid #4d30ff;
+}
 .vps-tarif {
   padding: 34px 49px;
   border-bottom: 1px solid #f1f1f7;
@@ -2591,6 +2595,9 @@ td {
 }
 .vps-tarif:last-child {
   border: none;
+}
+.vps-tarif-header {
+  min-width: 230px;
 }
 .vps-tarif-header h3 {
   font-weight: 500;
@@ -2614,6 +2621,9 @@ td {
 }
 .vps-tarif-header p span {
   color: #5b6987;
+}
+.vps-price-button {
+  text-align: right;
 }
 .vps-price {
   display: flex;
