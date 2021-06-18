@@ -2637,6 +2637,7 @@ td {
 .vps-price {
   display: flex;
   margin-bottom: 10px;
+  justify-content: flex-end;
 }
 .vps-price-button-discount {
   position: absolute;
@@ -2806,6 +2807,7 @@ td {
 .dedic-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .dedic-search-input {
   font-family: inherit;
@@ -2831,7 +2833,16 @@ td {
 .dedic-filter a {
   text-decoration: none;
 }
-.dedic-filter-button {
+.d-b-icon {
+  margin-right: 12px;
+}
+
+.tabs-2 {
+}
+.tabs-2-triggers {
+  display: flex;
+}
+.tabs-2-triggers__item {
   background: #ffffff;
   border: 1.25px solid #f1f1f7;
   box-sizing: border-box;
@@ -2839,15 +2850,88 @@ td {
   padding: 14px 34px;
   display: flex;
   align-items: center;
+  stroke: #4d30ff;
+  transition: all 0.3s ease-in-out;
 }
-.d-b-icon {
-  margin-right: 12px;
-}
-.dedic-filter-button p {
+.tabs-2-triggers__item p {
   font-family: Mazzard;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: -0.308571px;
   color: #4d30ff;
+  transition: all 0.3s ease-in-out;
+}
+.tabs-2-triggers__item--active {
+  background: #4d30ff;
+  border: none;
+  stroke: #ffffff;
+}
+.tabs-2-triggers__item--active p {
+  color: #ffffff;
+}
+.tabs-2-content {
+}
+.tabs-2-content__item {
+  display: none;
+  /* padding: 20px; */
+  border-top: 1px solid #f1f1f7;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+.tabs-2-content__item--active {
+  display: block;
+}
+.dedic-tarifs {
+  background: white;
+  border: 1px solid #f1f1f7;
+  margin-top: 25px;
+  border-radius: 2px;
+}
+.filters-counts {
+  display: flex;
+  margin-bottom: 25px;
+}
+.filters-counts h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.308571px;
+  margin-right: 25px;
+}
+.filters-counts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.308571px;
+  text-decoration-line: underline;
+  color: #4d30ff;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-location option {
+}
+.f-location select {
+  font-family: inherit;
+  background: #ffffff;
+  border: 1px solid #f1f1f7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.308571px;
+
+  color: #5b6987;
+}
+.filters > div > p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.308571px;
+  color: #212d3a;
+  margin-bottom: 12px;
 }
