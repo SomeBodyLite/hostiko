@@ -2910,23 +2910,73 @@ td {
 .filters {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.f-location option {
+.select {
+  margin: 0 auto;
+  position: relative;
 }
-.f-location select {
-  font-family: inherit;
-  background: #ffffff;
+.select.is-active .select__body {
+  display: block;
+}
+.select__header {
+  display: flex;
   border: 1px solid #f1f1f7;
-  box-sizing: border-box;
   border-radius: 2px;
-  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  align-items: center;
+}
+.select__current {
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
   letter-spacing: -0.308571px;
-
   color: #5b6987;
+  padding: 8px;
 }
+.select__icon {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+}
+.select__body {
+  border: 1px solid #f1f1f7;
+  background: #fff;
+  border-top: 0;
+  border-radius: 0px 0px 2px 2px;
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+.select__item {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.308571px;
+  color: #5b6987;
+  cursor: pointer;
+}
+.select__item:hover {
+  background: #f2f2f2;
+}
+/* .filters > * {
+  margin: 0 auto;
+} */
 .filters > div > p {
   font-weight: 500;
   font-size: 14px;
@@ -2934,4 +2984,50 @@ td {
   letter-spacing: -0.308571px;
   color: #212d3a;
   margin-bottom: 12px;
+}
+.select__icon .icon {
+  width: 8px;
+  height: 4px;
+}
+.price-controls input,
+.ram-controls input,
+.cores-controls input {
+  border: none;
+  width: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: inherit;
+  text-align: center;
+  letter-spacing: -0.308571px;
+  color: #5b6987;
+}
+.ram-controls input,
+.cores-controls input {
+  width: 36px;
+}
+.price-controls span,
+.ram-controls span,
+.cores-controls span {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.308571px;
+  color: #adb4c3;
+}
+.price-start,
+.ram-start,
+.cores-start {
+  margin-right: 10px;
+}
+.price-start,
+.price-end,
+.ram-start,
+.ram-end,
+.cores-start,
+.cores-end {
+  padding: 6px 12px 5px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f1f1f7;
+  border-radius: 2px;
 }

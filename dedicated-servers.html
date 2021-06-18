@@ -197,20 +197,124 @@
                   <div class="filters">
                     <div class="f-location">
                       <p>Расположение</p>
-                      <form>
-                        <p><select name="country">
-                        <option value="russia">Россия</option>
-                        <option value="germany">Германия</option>
-                        <option value="ukraina">Украина</option>
-                      </select></p>
-                      </form>
+                      <div class="select">
+                        <div class="select__header">
+                          <span class="select__current">Россия</span>
+                          <div class="select__icon">
+                            <svg class="icon">
+                              <use
+                                xlink:href="./assets/images/svg-s.svg#select-arrow"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">Россия</div>
+                          <div class="select__item">Германия</div>
+                          <div class="select__item">Украина</div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="f-price"></div>
-                    <div class="f-disk-type"></div>
-                    <div class="f-ram"></div>
-                    <div class="f-processor"></div>
-                    <div class="f-cores-counts"></div>
-                    <div class="f-cores-clock"></div>
+                    <div class="f-price">
+                      <p>Цена</p>
+                      <div class="price-controls d-flex">
+                        <div class="price-start">
+                          <span>от</span>
+                          <input class="min-price" type="text" value="500₽" />
+                        </div>
+                        <div class="price-end">
+                          <span>до</span>
+                          <input class="max-price" type="text" value="2000₽" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="f-disk-type">
+                      <p>Тип диска</p>
+                      <div class="select">
+                        <div class="select__header">
+                          <span class="select__current">NVME</span>
+                          <div class="select__icon">
+                            <svg class="icon">
+                              <use
+                                xlink:href="./assets/images/svg-s.svg#select-arrow"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">NVME</div>
+                          <div class="select__item">SSD</div>
+                          <div class="select__item">SSD 2</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="f-ram">
+                      <p>Размер ОЗУ</p>
+                      <div class="ram-controls d-flex">
+                        <div class="ram-start">
+                          <span>от</span>
+                          <input class="min-ram" type="text" value="1 ГБ" />
+                        </div>
+                        <div class="ram-end">
+                          <span>до</span>
+                          <input class="max-ram" type="text" value="4 ГБ" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="f-processor">
+                      <p>Серия процессора</p>
+                      <div class="select">
+                        <div class="select__header">
+                          <span class="select__current"
+                            >Intel Core i9 11900k</span
+                          >
+                          <div class="select__icon">
+                            <svg class="icon">
+                              <use
+                                xlink:href="./assets/images/svg-s.svg#select-arrow"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">Intel Core i9 11900k</div>
+                          <div class="select__item">Intel Xeon E5-2680 v4</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="f-cores-counts">
+                      <p>Количество ядер</p>
+                      <div class="cores-controls d-flex">
+                        <div class="cores-start">
+                          <span>от</span>
+                          <input class="min-cores" type="text" value="1 ГБ" />
+                        </div>
+                        <div class="cores-end">
+                          <span>до</span>
+                          <input class="max-cores" type="text" value="4 ГБ" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="f-cores-clock">
+                      <p>Частота ядра</p>
+                      <div class="select">
+                        <div class="select__header">
+                          <span class="select__current">4,8 ГГц</span>
+                          <div class="select__icon">
+                            <svg class="icon">
+                              <use
+                                xlink:href="./assets/images/svg-s.svg#select-arrow"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">4,8 ГГц</div>
+                          <div class="select__item">3,8 ГГц</div>
+                          <div class="select__item">3,2 ГГц</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -336,7 +440,6 @@
                   </a>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>

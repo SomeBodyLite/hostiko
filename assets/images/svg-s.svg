@@ -2,4 +2,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" id="filter-icor">
     <path d="M13.536 8H1m12.536 0a1.286 1.286 0 102.571 0m-2.571 0a1.286 1.286 0 112.571 0M19 8h-2.893M19 13.143H6.464m0 0a1.286 1.286 0 10-2.571 0m2.571 0a1.286 1.286 0 01-2.571 0m0 0H1M19 2.857H9.679m0 0a1.286 1.286 0 10-2.572 0m2.572 0a1.286 1.286 0 11-2.572 0m0 0H1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="select-arrow">
+    <path d="M5.969.164a.588.588 0 01.812 0l.05.049a.544.544 0 010 .788L3.906 3.836a.587.587 0 01-.815 0L.17 1A.547.547 0 01.167.213l.051-.05a.585.585 0 01.812 0L3.5 2.559 5.968.164z" fill="#ADB4C3"></path>
+  </symbol>
 </svg>
