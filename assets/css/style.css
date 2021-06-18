@@ -2487,18 +2487,20 @@ td {
   }
 }
 .individual-help {
-  background: #f8faff;
-  padding: 28px 0;
 }
-.individual-help,
 .individual-help-content {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8faff;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
-.individual-help-content,
+/* .individual-help-content,
 .individual-help-content > * {
   margin: auto;
-}
+} */
 .individual-help-content p {
   font-size: 24px;
   line-height: 24px;
@@ -2790,4 +2792,62 @@ td {
   .vps-price-button-discount {
     top: -328px;
   }
+  .individual-help-content p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .individual-help-content p {
+    font-size: 18px;
+  }
+  .individual-help-content button {
+    font-size: 15px;
+  }
+}
+.dedic-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.dedic-search-input {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 18px 32px;
+  background: #fcfcfe;
+  border: 1px solid #f1f1f7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-right: 8px;
+  width: 330px;
+}
+.dedic-search-button {
+  border: none;
+  width: 55px;
+  height: auto;
+  padding: 0;
+  background: #4d30ff;
+  border-radius: 2px;
+}
+.dedic-filter a {
+  text-decoration: none;
+}
+.dedic-filter-button {
+  background: #ffffff;
+  border: 1.25px solid #f1f1f7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 14px 34px;
+  display: flex;
+  align-items: center;
+}
+.d-b-icon {
+  margin-right: 12px;
+}
+.dedic-filter-button p {
+  font-family: Mazzard;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.308571px;
+  color: #4d30ff;
 }
