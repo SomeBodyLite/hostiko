@@ -1039,8 +1039,8 @@ html {
   border: 1px solid #f1f1f7;
   box-sizing: border-box;
   border-radius: 2px;
-  /* -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
-  transition: all 0.2s ease-out, color 0.2s ease-out; */
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
 }
 .form-text-1 input {
   width: 100%;
