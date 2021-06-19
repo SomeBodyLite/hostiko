@@ -3098,8 +3098,7 @@ input:invalid:not(:placeholder-shown) {
 }
 .form-text-1 input:valid:not(:placeholder-shown) {
   border-color: green;
-  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")
-    no-repeat 95% 50% #f8faff;
+  background: url("../images/check.svg") no-repeat 95% 50% #f8faff;
   background-size: 25px;
 }
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
