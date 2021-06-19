@@ -1080,7 +1080,7 @@ input:required:valid {
 } */
 input:focus,
 textarea:focus {
-  border-color: #212d3a;
+  border-color: #1a1a2342;
   /* background: #e3e3fc; */
 }
 .form-buttons input:last-child {
