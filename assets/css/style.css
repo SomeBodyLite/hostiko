@@ -56,6 +56,9 @@ html {
   font-family: "Mazzard", sans-serif;
   background: white;
 }
+button {
+  transition: all 0.2s ease-in-out;
+}
 .header-top {
   height: 45px;
   border-top: 1px solid #f1f1f7;
@@ -366,7 +369,9 @@ html {
 .call-us-button:hover,
 .v-hosting-button:hover,
 .pricing-list .price-popular button:hover,
-.individual-help-content button:hover {
+.individual-help-content button:hover,
+.vps-button button:hover,
+.total-price-4 button:hover {
   background: #513cd2;
 }
 .header-button {
@@ -2502,8 +2507,6 @@ td {
     content: none;
   }
 }
-.individual-help {
-}
 .individual-help-content {
   display: flex;
   flex-wrap: wrap;
@@ -2856,8 +2859,6 @@ td {
   margin-right: 12px;
 }
 
-.tabs-2 {
-}
 .tabs-2-triggers {
   display: flex;
 }
@@ -2888,8 +2889,6 @@ td {
 }
 .tabs-2-triggers__item--active p {
   color: #ffffff;
-}
-.tabs-2-content {
 }
 .tabs-2-content__item {
   display: none;
@@ -2935,6 +2934,10 @@ td {
   margin: 0 auto;
   position: relative;
 }
+.proc-name .select {
+  width: 80%;
+  margin: 0;
+}
 .select.is-active .select__body {
   display: block;
   z-index: 1;
@@ -2958,6 +2961,9 @@ td {
   letter-spacing: -0.308571px;
   color: #5b6987;
   padding: 8px;
+}
+.proc-select__current {
+  padding: 14.5px;
 }
 .select__icon {
   width: 20px;
@@ -3112,9 +3118,17 @@ input:invalid:not(:placeholder-shown) {
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
 }
-
+.setting-services > * {
+  margin-bottom: 50px;
+}
+.setting-start {
+  width: 50%;
+}
 .setting-end {
   width: 47%;
+}
+.name-and-proc {
+  display: flex;
 }
 .form-item {
   display: flex;
@@ -3144,6 +3158,7 @@ input:invalid:not(:placeholder-shown) {
   border-radius: 4px;
   padding: 32px 35px;
   width: 320px;
+  margin-bottom: 25px;
 }
 .setting-annotation h2 {
   font-weight: 500;
@@ -3157,20 +3172,22 @@ input:invalid:not(:placeholder-shown) {
   line-height: 20px;
   color: #5b6987;
 }
-.seting-total-price {
+.setting-total-price {
   border: 1px solid #f1f1f7;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 42px 57px;
 }
-.seting-total-price > *,
-.seting-total-price h2 {
+.setting-total-price > *,
+.setting-total-price h2,
+.server-name h2,
+.proc-name h2 {
   margin-bottom: 25px;
 }
-.seting-total-price > *:last-child {
+.setting-total-price > *:last-child {
   margin-bottom: 0;
 }
-.seting-total-price hr {
+.setting-total-price hr {
   border: none;
   margin: 11.5px 0;
   border-bottom: 1px solid #f1f1f7;
@@ -3181,20 +3198,22 @@ input:invalid:not(:placeholder-shown) {
   justify-content: space-between;
   align-items: center;
 }
-.seting-total-price h2 {
+.setting-total-price h2,
+.server-name h2,
+.proc-name h2 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #212d3a;
 }
-.seting-total-price h3 {
+.setting-total-price h3 {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #5b6987;
 }
-.seting-total-price p {
+.setting-total-price p {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.24px;
@@ -3278,8 +3297,177 @@ input:invalid:not(:placeholder-shown) {
   width: 100%;
   text-align: center;
   letter-spacing: -0.0024em;
-
-  /* White Color */
-
   color: #ffffff;
+}
+.server-name {
+  margin-right: 25px;
+}
+.server-name-input {
+  padding: 13px 20px;
+  border: none;
+  background: #fcfcfe;
+  border: 1px solid #f1f1f7;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  color: #adb4c3;
+  min-width: 200px;
+  max-width: 310px;
+  width: auto;
+}
+
+.setting-accordion {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f1f1f7;
+  border-width: 50%;
+  text-align: left;
+  outline: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #212d3a;
+  transition: 0.4s;
+}
+.setting-accordion em {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.0024em;
+  color: #adb4c3;
+}
+.setting-accordion div {
+  display: flex;
+  align-items: center;
+}
+.setting-accordion p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.362133px;
+  text-decoration-line: underline;
+  color: #5b6987;
+  margin-right: 18px;
+}
+.setting-accordion .icon {
+  transition: 0.4s ease-in-out;
+}
+/* .active,
+.setting-accordion:hover {
+  background-color: #ccc;
+} */
+
+.ico::before {
+  content: "Показать";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.362133px;
+  text-decoration-line: underline;
+  color: #5b6987;
+  margin-right: 18px;
+}
+
+.active .icon {
+  transform: rotate(180deg);
+}
+.active .ico::before {
+  content: "Скрыть";
+}
+
+.panel {
+  /* padding: 0 18px; */
+  margin: 20px 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.disk-checkbox p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.disk-checkbox {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.disk-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1.25px solid #f1f1f7;
+  background-color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+/* On mouse-over, add a grey background color */
+.disk-checkbox:hover input ~ .checkmark {
+  background-color: rgb(250, 250, 250);
+}
+
+/* When the checkbox is checked, add a blue background */
+.disk-checkbox input:checked ~ .checkmark {
+  background-color: #4d30ff;
+  border-radius: 2px;
+  border: 1.25px solid #4d30ff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.disk-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.disk-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
