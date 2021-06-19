@@ -244,7 +244,7 @@ html {
     background: /*rgb(245, 246, 246);*/ white;
     box-shadow: #ccc;
     width: 100%;
-    height: 730%;
+    /* height: 730%; */
     box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
     left: -100%;
     transition: all 0.4s ease;
@@ -3112,8 +3112,25 @@ input:invalid:not(:placeholder-shown) {
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
 }
+
+.setting-end {
+  width: 47%;
+}
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-item input {
+  display: none;
+}
+.radio-container .radio-btn input:checked + label {
+  background-color: #0082fe;
+  color: #fff;
+}
 .tarif-setting {
   display: flex;
+  justify-content: space-between;
 }
 .tarif-setting div h1 {
   font-size: 36px;
@@ -3139,4 +3156,130 @@ input:invalid:not(:placeholder-shown) {
   font-size: 12px;
   line-height: 20px;
   color: #5b6987;
+}
+.seting-total-price {
+  border: 1px solid #f1f1f7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 42px 57px;
+}
+.seting-total-price > *,
+.seting-total-price h2 {
+  margin-bottom: 25px;
+}
+.seting-total-price > *:last-child {
+  margin-bottom: 0;
+}
+.seting-total-price hr {
+  border: none;
+  margin: 11.5px 0;
+  border-bottom: 1px solid #f1f1f7;
+}
+.tarif-price,
+.extra-services > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seting-total-price h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #212d3a;
+}
+.seting-total-price h3 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.seting-total-price p {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+
+.radio {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.radio input {
+  display: none;
+}
+.radio input + span {
+  height: 22px;
+  padding-left: 22px;
+  display: block;
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  color: #5b6987;
+}
+.radio input + span em {
+  font-weight: normal;
+  color: #adb4c3;
+}
+.radio input + span:not(:empty) {
+  padding-left: 30px;
+}
+.radio input + span:before,
+.radio input + span:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.radio input + span:before {
+  background: #f1f1f7;
+  transition: background 0.2s ease,
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+.radio input + span:after {
+  background: #fff;
+  transform: scale(0.78);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+.radio input:checked + span:before {
+  transform: scale(1.04);
+  background: #4d30ff;
+}
+.radio input:checked + span:after {
+  transform: scale(0.53);
+  transition: transform 0.3s ease;
+}
+.radio:hover input + span:before {
+  transform: scale(0.92);
+}
+.radio:hover input + span:after {
+  transform: scale(0.74);
+}
+.radio:hover input:checked + span:after {
+  transform: scale(0.53);
+}
+.total-price-4 a button {
+  border: none;
+  background: #4d30ff;
+  border-radius: 2px;
+  padding: 15px 100px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: -0.0024em;
+
+  /* White Color */
+
+  color: #ffffff;
 }
