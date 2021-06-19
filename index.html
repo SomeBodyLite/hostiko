@@ -381,16 +381,20 @@
                   required
                   placeholder="Как к Вам обращаться?"
                   pattern="^[А-Яа-яЁё\s]+$"
+                  minlength="5"
+                  maxlength="20"
                 />
+                <span class="form__error">Проверьте этот пункт</span>
               </div>
               <div class="mail">
                 <input
-                  type="text"
-                  required
-                  name="ask"
-                  autocomplete="off"
+                  onkeyup="this.setAttribute('value', this.value);"
                   placeholder="Контактный адрес связи"
+                  required
+                  minlength="5"
+                  maxlength="20"
                 />
+                <span class="form__error">Проверьте этот пункт</span>
               </div>
             </div>
             <div class="form-text-2">
@@ -635,4 +639,5 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="assets/js/menu.js"></script>
+    
 </html>

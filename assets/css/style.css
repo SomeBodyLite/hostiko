@@ -161,6 +161,7 @@ html {
 }
 
 .dropdown:hover .dropdown-content,
+.dropdown:active .dropdown-content,
 .dropdown:focus .dropdown-content {
   display: block;
 }
@@ -508,7 +509,8 @@ html {
     padding-bottom: 70px;
   }
   .services > h1,
-  .advantages > h1 {
+  .advantages > h1,
+  .dedic h1 {
     text-align: center;
   }
 }
@@ -1068,10 +1070,15 @@ input:required:valid {
   border-color: green;
 }
 
-input:invalid:focus {
+/* input:invalid:focus {
   border-color: red;
   background: #ffcdcd;
   color: red;
+} */
+input:focus,
+textarea:focus {
+  border-color: #c9c9f5;
+  background: #e3e3fc;
 }
 .form-buttons input:last-child {
   margin-top: 25px;
@@ -1695,7 +1702,8 @@ input:invalid:focus {
   .annotation-text h2,
   .vps h1,
   .add-services h1,
-  .discounts h1 {
+  .discounts h1,
+  .dedic h1 {
     font-size: 25px;
     line-height: 25px;
   }
@@ -2743,11 +2751,13 @@ td {
     font-size: 14px;
     text-align: center;
   }
-  .vps-tarif-header h3,
   .add-services-line p,
   .add-services-line em,
   .discounts-blocks p {
     font-size: 16px;
+  }
+  .vps-tarif-header h3 {
+    font-size: 19px;
   }
   .add-services-line p {
     margin-bottom: 15px;
@@ -2767,7 +2777,7 @@ td {
     border-bottom: 0px;
   }
   .vps-tarif-header p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .vps-tarif-header {
     align-items: center;
@@ -2812,6 +2822,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .dedic-search-input {
   font-family: inherit;
@@ -3036,4 +3047,61 @@ td {
   align-items: center;
   border: 1px solid #f1f1f7;
   border-radius: 2px;
+}
+@media (max-width: 767px) {
+  .dedic-nav {
+    justify-content: center;
+  }
+  .dedic-search-input {
+    width: 80%;
+  }
+  .dedic-search {
+    margin-bottom: 15px;
+  }
+  .filters-counts {
+    justify-content: space-between;
+  }
+  .filters-counts h3,
+  .filters-counts a {
+    font-size: 13px;
+  }
+  .filters > div > p {
+    font-size: 12px;
+  }
+  .filters > div {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .dedic-tarifs .property-1,
+  .dedic-tarifs .property-3 {
+    margin-right: 0;
+  }
+  .dedic-tarifs .property {
+    justify-content: space-between;
+  }
+}
+.form__error {
+  color: #e01f3d;
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 10px 0 0;
+  display: none;
+}
+.form-text-1 mail {
+  color: #fff;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: #e01f3d;
+  background: #f7d0d7;
+  color: #e01f3d;
+}
+.form-text-1 input:valid:not(:placeholder-shown) {
+  border-color: green;
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")
+    no-repeat 95% 50% #f8faff;
+  background-size: 25px;
+}
+.form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
 }
