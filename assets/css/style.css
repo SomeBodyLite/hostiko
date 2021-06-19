@@ -1039,8 +1039,8 @@ html {
   border: 1px solid #f1f1f7;
   box-sizing: border-box;
   border-radius: 2px;
-  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
-  transition: all 0.2s ease-out, color 0.2s ease-out;
+  /* -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out; */
 }
 .form-text-1 input {
   width: 100%;
@@ -1080,7 +1080,7 @@ input:required:valid {
 } */
 input:focus,
 textarea:focus {
-  border-color: #aeaed5;
+  border-color: #212d3a;
   /* background: #e3e3fc; */
 }
 .form-buttons input:last-child {
