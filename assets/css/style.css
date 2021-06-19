@@ -1021,7 +1021,7 @@ html {
 .mail {
   width: 100%;
 }
-.call-us .form {
+.contacts-form-end .form {
   padding: 50px;
 }
 .form-text-1 input,
@@ -1519,7 +1519,7 @@ textarea:focus {
 .contacts-form-2 p,
 .contacts-form-3 p,
 .adres-1 p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 21px;
   color: #212d3a;
   margin-bottom: 13px;
@@ -1529,7 +1529,7 @@ textarea:focus {
 .contacts-form-2 a,
 .contacts-form-3 a {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 26px;
   display: flex;
   align-items: center;
@@ -3101,9 +3101,12 @@ input:invalid:not(:placeholder-shown) {
 }
 .form-text-1 input:valid:not(:placeholder-shown) {
   border-color: green;
-  background: url("../images/check.svg") no-repeat 95% 50% #f8faff;
+  background: url("../images/check.svg") no-repeat 95% 50%;
+  background-color: #f8faff;
   background-size: 20px;
   transition: none;
+  transition: border-color, background-color 0.2s ease-in-out;
+  transition: background 0.55s opacity, 0.55s visibility;
 }
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
