@@ -153,7 +153,11 @@ html {
   /* right: 99%; */
   left: 0px;
   content: url(../images/dropdown\ a.svg);
-  display: inherit;
+  /* display: inherit; */
+}
+.dropdown-content a:hover::before {
+  /* align-items: center; */
+  margin-top: 12px;
 }
 
 .dropdown:hover .dropdown-content,
