@@ -3102,7 +3102,7 @@ input:invalid:not(:placeholder-shown) {
 .form-text-1 input:valid:not(:placeholder-shown) {
   border-color: green;
   background: url("../images/check.svg") no-repeat 95% 50% #f8faff;
-  background-size: 25px;
+  background-size: 20px;
 }
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
