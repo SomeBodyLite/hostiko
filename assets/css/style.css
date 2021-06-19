@@ -2918,6 +2918,7 @@ td {
 }
 .select.is-active .select__body {
   display: block;
+  z-index: 1;
 }
 .select__header {
   display: flex;
@@ -2926,6 +2927,7 @@ td {
   cursor: pointer;
   margin: 0 auto;
   align-items: center;
+  background: white;
 }
 .select__current {
   font-weight: 500;
