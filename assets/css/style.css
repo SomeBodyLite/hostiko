@@ -388,7 +388,8 @@ html {
 .about,
 .v-hosting,
 .vps,
-.dedic {
+.dedic,
+.tarif-setting {
   margin-top: 208px;
   margin-bottom: 75px;
 }
@@ -3110,4 +3111,32 @@ input:invalid:not(:placeholder-shown) {
 }
 .form-text-1 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
+}
+.tarif-setting {
+  display: flex;
+}
+.tarif-setting div h1 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #212d3a;
+  margin-bottom: 25px;
+}
+.setting-annotation {
+  border: 1px solid #f1f1f7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 32px 35px;
+  width: 320px;
+}
+.setting-annotation h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #212d3a;
+  margin-bottom: 12px;
+}
+.setting-annotation li {
+  font-size: 12px;
+  line-height: 20px;
+  color: #5b6987;
 }
