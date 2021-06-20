@@ -156,7 +156,7 @@
               <ul>
                 <li>— 1 общий публичный IP-адрес</li>
                 <li>— Круглосуточная поддержка</li>
-                <li>— Размещение в ЦОД уровня TIER III</li>
+                <li>— Размещение в ЦОД уровня TIER&nbsp;III</li>
                 <li>— Подключение к приватной сети</li>
               </ul>
             </div>
@@ -334,16 +334,18 @@
                     <div style="display: flex; width: auto">
                       <div class="range-button">
                         <button class="counter-button" data-direction="minus">
-                          - |
+                          -&nbsp;|
                         </button>
                         <input
                           class="counter-input"
-                          type="text"
+                          type="number"
+                          value="5"
                           oninput="fun2()"
                           id="i1"
+                          max="20"
                         />
                         <button class="counter-button" data-direction="plus">
-                          | +
+                          |&nbsp;+
                         </button>
                       </div>
                     </div>
@@ -431,7 +433,7 @@
                 <h2>Тарифный план</h2>
                 <div class="tarif-price">
                   <h3>Тариф «Core i9 RU M»</h3>
-                  <p>1000 ₽</p>
+                  <p>1000&nbsp;₽</p>
                 </div>
                 <hr />
               </div>
@@ -440,22 +442,24 @@
                 <div class="extra-services">
                   <div class="extra-1">
                     <h3>Уровень RAID: <span>501</span></h3>
-                    <p>1000 ₽</p>
+                    <p>1000&nbsp;₽</p>
                   </div>
                   <hr />
                   <div class="extra-2">
-                    <h3>Скорость канала: <span>1 Гбит/c</span></h3>
+                    <h3>Скорость канала: <span>1&nbsp;Гбит/c</span></h3>
                     <p>Бесплатно</p>
                   </div>
                   <hr />
                   <div class="extra-3">
                     <h3>Тип диска: <span>NVMe, HDD</span></h3>
-                    <p>500 ₽</p>
+                    <p>500&nbsp;₽</p>
                   </div>
                   <hr />
                   <div class="extra-4">
-                    <h3>Скорость защищённого канала: <span>100 МБ/c</span></h3>
-                    <p>200 ₽</p>
+                    <h3>
+                      Скорость защищённого канала: <span>100&nbsp;МБ/c</span>
+                    </h3>
+                    <p>200&nbsp;₽</p>
                   </div>
                   <hr />
                 </div>
@@ -516,9 +520,12 @@
           <div class="accordion">
             <div class="accordion-item">
               <button id="accordion-button-1" aria-expanded="false">
-                <span class="accordion-title"
-                  >Как мне выбрать тариф хостинга для своих задач?</span
-                >
+                <div class="accordion-start">
+                  <span class="accordion-title">
+                    Как мне выбрать тариф хостинга для своих задач?
+                  </span>
+                  <p>Узнайте как не ошибиться при выборе тарифа.</p>
+                </div>
                 <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
               </button>
               <div class="accordion-content">
@@ -539,8 +546,13 @@
             </div>
             <div class="accordion-item">
               <button id="accordion-button-2" aria-expanded="false">
-                <span class="accordion-title">Что такое хостинг для сайта?</span
-                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+                <div class="accordion-start">
+                  <span class="accordion-title">
+                    Что такое хостинг для сайта?
+                  </span>
+                  <p>Узнайте как не ошибиться при выборе хостинга.</p>
+                </div>
+                <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
               </button>
               <div class="accordion-content">
                 <p>
@@ -560,9 +572,13 @@
             </div>
             <div class="accordion-item">
               <button id="accordion-button-3" aria-expanded="false">
-                <span class="accordion-title"
-                  >Какую поддержку вы предоставляете?</span
-                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+                <div class="accordion-start">
+                  <span class="accordion-title">
+                    Какую поддержку вы предоставляете?
+                  </span>
+                  <p>Узнайте как не ошибиться при выборе хостинга.</p>
+                </div>
+                <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
               </button>
               <div class="accordion-content">
                 <p>
@@ -581,8 +597,13 @@
             </div>
             <div class="accordion-item">
               <button id="accordion-button-4" aria-expanded="false">
-                <span class="accordion-title">Как мне создать свой сайт?</span
-                ><img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
+                <div class="accordion-start">
+                  <span class="accordion-title">
+                    Как мне создать свой сайт?
+                  </span>
+                  <p>Узнайте как не ошибиться при выборе хостинга.</p>
+                </div>
+                <img class="icon" src="./assets/images/faq-arrow.svg" alt="" />
               </button>
               <div class="accordion-content">
                 <p>
@@ -889,6 +910,7 @@
       var i1 = document.getElementById("i1"); // i1 - input
       i1.value = rng.value;
     }
+
     function fun2() {
       var rng = document.getElementById("r1"); //rng - это ползунок
       var i1 = document.getElementById("i1"); // i1 - input
@@ -911,10 +933,10 @@
           }
 
           inp.value = newValue;
+          inp.dispatchEvent(new Event("input")); // ДОБАВИЛ СЮДА ВЫЗОВ ONINPUT
         });
       });
     };
-
     counter();
   </script>
 </html>

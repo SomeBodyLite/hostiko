@@ -1698,7 +1698,8 @@ textarea:focus {
   .call-us,
   .v-hosting,
   .vps,
-  .dedic {
+  .dedic,
+  .tarif-setting {
     margin-top: 132px;
   }
   .annotation img,
@@ -2140,13 +2141,13 @@ td {
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
-  color: #03b5d2;
+  /* color: #03b5d2; */
 }
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+  /* color: #03b5d2;
+  border: 1px solid #03b5d2; */
 }
 
 .accordion button .accordion-title {
@@ -2156,6 +2157,12 @@ td {
   font-size: 20px;
   line-height: 20px;
   color: #212d3a;
+}
+.accordion-start p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5b6987;
+  font-family: Mazzard;
 }
 .accordion button .icon {
   display: inline-block;
@@ -3610,18 +3617,29 @@ input[type="range"]:focus::-ms-fill-lower {
 input[type="range"]:focus::-ms-fill-upper {
   background: #f1f1f7;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:invalid:not(:placeholder-shown) {
+  color: #e01f3d;
+  background: none;
+}
 .range-button {
   border: 1px solid #f1f1f7;
   display: flex;
   align-items: center;
   width: auto;
   border-radius: 2px;
-  padding: 8px 12px;
+  padding: 8px;
 }
 .range-button button {
   border: none;
   background: white;
-  padding: 0;
+  padding: 0 0 0 6px;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -3629,9 +3647,12 @@ input[type="range"]:focus::-ms-fill-upper {
   color: #adb4c3;
   font-family: inherit;
 }
+.counter-button:last-child {
+  padding: 0 6px 0 0;
+}
 .range-button input {
   border: none;
-  padding: 0;
+  padding: 0 3px;
   width: 20px;
   text-align: center;
   font-family: inherit;
@@ -3658,4 +3679,91 @@ input[type="range"]:focus::-ms-fill-upper {
   text-decoration-line: underline;
   color: #4d30ff;
   margin-left: 12px;
+}
+@media (max-width: 991px) {
+  .tarif-setting {
+    flex-direction: column-reverse;
+  }
+  .setting-start,
+  .setting-end {
+    width: auto;
+  }
+  .setting-total-price {
+    padding: 22px 17px;
+  }
+  .setting-total-price h2,
+  .server-name h2,
+  .proc-name h2,
+  .settings-addition-block h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .setting-total-price h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .setting-total-price p,
+  .radio input + span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .radio,
+  .radio input + span {
+    align-items: center;
+    display: flex;
+  }
+  .total-price-4 a button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .radio input + span::before,
+  .radio input + span::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 4px;
+  }
+  .tarif-setting div h1 {
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .setting-start {
+    margin-top: 25px;
+  }
+  .setting-annotation {
+    width: auto;
+  }
+  .name-and-proc {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .server-name {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .setting-accordion em {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .setting-accordion {
+    font-size: 15px;
+  }
+  .ico::before {
+    font-size: 12px;
+  }
+  .panel p {
+    font-size: 14px;
+  }
+  .addition-button p {
+    font-size: 13px;
+  }
+  .accordion-start p {
+    font-size: 10px;
+  }
+}
+.country-list-item:hover,
+.tabs-triggers__item:hover {
+  border-bottom: 2px solid #4d30ff;
 }
