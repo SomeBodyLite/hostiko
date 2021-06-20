@@ -2891,7 +2891,7 @@ td {
 }
 .tabs-2-triggers__item--active {
   background: #4d30ff;
-  border: none;
+  border: 1.25px solid #4d30ff;
   stroke: #ffffff;
 }
 .tabs-2-triggers__item--active p {
