@@ -139,7 +139,10 @@ button {
 }
 @media (max-width: 991px) {
   .dropdown-content {
-    top: 60%;
+    top: 49%;
+  }
+  .dropdown-content a {
+    padding: 0px 16px;
   }
 }
 .dropbtn {
@@ -195,16 +198,18 @@ button {
 .contacts-burger > * {
   display: flex;
   align-items: center;
-  margin-right: 35px;
+  /* margin-right: 35px; */
+  padding-bottom: 4px;
 }
 .contacts > *:last-child,
 .contacts-burger > *:last-child {
   margin-right: 0;
 }
 .contacts-burger {
-  margin-top: 16px;
-  padding-top: 17px;
-  border-top: 1px solid #f1f1f7;
+  margin-bottom: 16px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #f1f1f7;
+  justify-content: space-around;
 }
 .number > a,
 .language span,
@@ -228,6 +233,15 @@ button {
 @media (max-width: 991px) {
   .currency .dropdown-content {
     min-width: 90px;
+  }
+  .number > a,
+  .language span,
+  .currency span {
+    display: flex;
+    flex-direction: row;
+  }
+  .dropdown .dropbtn {
+    display: flex;
   }
 }
 
