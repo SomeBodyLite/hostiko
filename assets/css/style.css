@@ -225,6 +225,12 @@ button {
 .currency .dropdown-content {
   min-width: 140px;
 }
+@media (max-width: 991px) {
+  .currency .dropdown-content {
+    min-width: 90px;
+  }
+}
+
 .language > span,
 .currency > span {
   display: flex;
