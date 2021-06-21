@@ -137,6 +137,11 @@ button {
   transition: all 0.2s ease-out, color 0.2s ease-out;
   padding: 8px 0;
 }
+@media (max-width: 991px) {
+  .dropdown-content {
+    top: 60%;
+  }
+}
 .dropbtn {
   color: #5b6987;
   padding: 0;
@@ -162,6 +167,10 @@ button {
 .dropdown-content a:hover::before {
   /* align-items: center; */
   margin-top: 12px;
+}
+
+.dropdown-content--active {
+  display: block;
 }
 
 .dropdown:hover .dropdown-content,
