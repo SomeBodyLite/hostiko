@@ -201,6 +201,9 @@ button {
   /* margin-right: 35px; */
   padding-bottom: 4px;
 }
+.contacts > * {
+  margin-right: 35px;
+}
 .contacts > *:last-child,
 .contacts-burger > *:last-child {
   margin-right: 0;
@@ -1057,8 +1060,10 @@ button {
 .mail {
   width: 100%;
 }
-.contacts-form-end .form {
-  padding: 50px;
+@media (max-width: 1400px) {
+  .contacts-form-end .form {
+    padding: 50px;
+  }
 }
 .form-text-1 input,
 .form-text-2 textarea {
