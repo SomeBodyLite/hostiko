@@ -30,6 +30,7 @@ svg {
 }
 body {
   width: 100%;
+  /* background-color: #ffffff; */
 }
 a:focus {
   outline: none;
@@ -3054,6 +3055,8 @@ td {
   line-height: 14px;
   letter-spacing: -0.308571px;
   color: #adb4c3;
+  padding-right: 7px;
+  border-right: 2px solid #f1f1f7;
 }
 .price-start,
 .ram-start,
@@ -3135,6 +3138,7 @@ input:invalid:not(:placeholder-shown) {
 }
 .setting-start {
   width: 50%;
+  background: white;
 }
 .setting-end {
   width: 47%;
@@ -3185,6 +3189,7 @@ input:invalid:not(:placeholder-shown) {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 42px 57px;
+  background: white;
 }
 .setting-total-price > *,
 .setting-total-price h2,
@@ -3486,6 +3491,29 @@ input:invalid:not(:placeholder-shown) {
   display: flex;
 }
 
+.tarif-setting::after {
+  content: url(../images/party.svg);
+  position: absolute;
+  right: 0;
+  top: 194px;
+  z-index: -1;
+}
+.tarif-setting::before {
+  content: url(../images/threeangle.svg);
+  /* background: url(); */
+  position: absolute;
+  /* width: 398px;
+  height: 218px; */
+  left: -0px;
+  top: 494px;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .tarif-setting::before,
+  .tarif-setting::after {
+    content: none;
+  }
+}
 .radio-container-2 {
   display: flex;
   align-items: center;
@@ -3643,8 +3671,9 @@ input[type="number"]:invalid:not(:placeholder-shown) {
 }
 .range-button button {
   border: none;
+  border-right: 2px solid #f1f1f7;
   background: white;
-  padding: 0 0 0 6px;
+  padding: 0 7px 0 6px;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -3653,7 +3682,9 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   font-family: inherit;
 }
 .counter-button:last-child {
-  padding: 0 6px 0 0;
+  border-right: 0;
+  border-left: 2px solid #f1f1f7;
+  padding: 0 6px 0 7px;
 }
 .range-button input {
   border: none;
