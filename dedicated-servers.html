@@ -220,11 +220,31 @@
                       <div class="price-controls d-flex">
                         <div class="price-start">
                           <span>от</span>
-                          <input class="min-price" type="text" value="500₽" />
+                          <input
+                            class="min-price"
+                            id="first"
+                            size="1"
+                            maxlength="5"
+                            value="500"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >₽</span
+                          >
                         </div>
                         <div class="price-end">
                           <span>до</span>
-                          <input class="max-price" type="text" value="2000₽" />
+                          <input
+                            class="max-price"
+                            id="first"
+                            size="1"
+                            maxlength="5"
+                            value="2000"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >₽</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -253,11 +273,31 @@
                       <div class="ram-controls d-flex">
                         <div class="ram-start">
                           <span>от</span>
-                          <input class="min-ram" type="text" value="1 ГБ" />
+                          <input
+                            class="min-ram"
+                            id="first"
+                            size="1"
+                            maxlength="2"
+                            value="1"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >ГБ</span
+                          >
                         </div>
                         <div class="ram-end">
                           <span>до</span>
-                          <input class="max-ram" type="text" value="4 ГБ" />
+                          <input
+                            class="max-ram"
+                            id="first"
+                            size="1"
+                            maxlength="2"
+                            value="4"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >ГБ</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -287,11 +327,31 @@
                       <div class="cores-controls d-flex">
                         <div class="cores-start">
                           <span>от</span>
-                          <input class="min-cores" type="text" value="1 ГБ" />
+                          <input
+                            class="min-cores"
+                            id="first"
+                            size="1"
+                            maxlength="2"
+                            value="1"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >ГБ</span
+                          >
                         </div>
                         <div class="cores-end">
                           <span>до</span>
-                          <input class="max-cores" type="text" value="4 ГБ" />
+                          <input
+                            class="max-cores"
+                            id="first"
+                            size="1"
+                            maxlength="2"
+                            value="1"
+                          /><span
+                            id="last"
+                            onclick="this.previousElementSibling.focus();"
+                            >ГБ</span
+                          >
                         </div>
                       </div>
                     </div>

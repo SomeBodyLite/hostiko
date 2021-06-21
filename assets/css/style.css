@@ -3035,7 +3035,7 @@ td {
 .ram-controls input,
 .cores-controls input {
   border: none;
-  width: 48px;
+  width: 40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -3046,7 +3046,7 @@ td {
 }
 .ram-controls input,
 .cores-controls input {
-  width: 36px;
+  width: 16px;
 }
 .price-controls span,
 .ram-controls span,
@@ -3057,6 +3057,13 @@ td {
   color: #adb4c3;
   padding-right: 7px;
   border-right: 2px solid #f1f1f7;
+}
+.price-controls span:last-child,
+.ram-controls span:last-child,
+.cores-controls span:last-child {
+  font-weight: 500;
+  color: #5b6987;
+  border-right: 0;
 }
 .price-start,
 .ram-start,
