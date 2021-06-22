@@ -405,7 +405,7 @@ button {
 .individual-help-content button:hover,
 .vps-button button:hover,
 .total-price-4 button:hover {
-  background: #513cd2;
+  background: #3a1aff;
 }
 .header-button {
   font-style: normal;
@@ -471,7 +471,7 @@ button {
 }
 .main-button-1 > a:hover,
 .about-button:hover {
-  background: #513cd2;
+  background: #3a1aff;
 }
 .main-button-1 > a {
   color: #ffffff;
@@ -1144,7 +1144,7 @@ textarea:focus {
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .form-submit-button:hover {
-  background: #513cd2;
+  background: #3a1aff;
 }
 .custom-checkbox {
   position: absolute;
