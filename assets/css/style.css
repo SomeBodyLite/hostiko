@@ -3857,7 +3857,11 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   .ram-end,
   .cores-start,
   .cores-end {
-    width: 100%;
+    justify-content: center;
+  }
+  .price-controls,
+  .ram-controls,
+  .cores-controls {
     justify-content: center;
   }
   .country-list-item img,
