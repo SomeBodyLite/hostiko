@@ -30,7 +30,10 @@ svg {
 }
 body {
   width: 100%;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
+}
+body * {
+  z-index: 1;
 }
 a:focus {
   outline: none;
@@ -55,7 +58,7 @@ img {
 html {
   max-width: 100%;
   font-family: "Mazzard", sans-serif;
-  background: white;
+  background: #ffffff;
 }
 button {
   transition: all 0.2s ease-in-out;
@@ -125,7 +128,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.99);
   min-width: 160px;
   border: 1px solid #f1f1f7;
   box-shadow: 0px 25px 25px rgba(21, 14, 65, 0.05),
@@ -138,8 +141,8 @@ button {
   padding: 8px 0;
 }
 @media (max-width: 991px) {
-  .dropdown-content {
-    top: 53vh;
+  .contacts-burger .dropdown .dropdown-content {
+    bottom: 93px;
   }
   .dropdown-content a {
     padding: 0px 16px;
@@ -210,9 +213,8 @@ button {
   margin-right: 0;
 }
 .contacts-burger {
-  margin-bottom: 16px;
   padding-bottom: 17px;
-  border-bottom: 1px solid #f1f1f7;
+  /* border-bottom: 1px solid #f1f1f7; */
   justify-content: space-around;
 }
 .number > a,
@@ -253,8 +255,8 @@ button {
 .currency > span {
   display: flex;
 }
-.language > img,
-.currency > img,
+.contacts-burger .language img,
+.contacts-burger .currency img,
 .number > img {
   margin-right: 7px;
 }
@@ -273,7 +275,7 @@ button {
 }
 @media (max-width: 991px) {
   .header-nav {
-    margin-top: 27px;
+    margin-top: 25px;
     display: block;
     position: absolute;
     top: 55px;
@@ -281,7 +283,8 @@ button {
     background: /*rgb(245, 246, 246);*/ white;
     box-shadow: #ccc;
     width: 100%;
-    height: 90vh;
+    border-top: 1px solid #f1f1f7;
+    height: 91vh;
     box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
     left: -100%;
     transition: all 0.4s ease;
@@ -764,9 +767,8 @@ button {
 }
 .bottom-burger {
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   border-top: 1px solid #f1f1f7;
-  border-bottom: 1px solid #f1f1f7;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
 }
@@ -1066,6 +1068,15 @@ button {
     padding: 50px;
   }
 }
+@media (max-width: 991px) {
+  .contacts-form-end .form {
+    padding: 50px 10px 50px 10px;
+  }
+  .form-text-2 {
+    width: 100%;
+  }
+}
+
 .form-text-1 input,
 .form-text-2 textarea {
   font-family: inherit;
@@ -2694,6 +2705,9 @@ td {
   letter-spacing: -0.24px;
   color: #adb4c3;
 }
+.vps-tarif-header p.price-water {
+  color: #ff6d30;
+}
 .vps-tarif-header hr {
   border: none;
   width: 95px;
@@ -2715,7 +2729,7 @@ td {
 .vps-price-button-discount {
   position: absolute;
   left: 30%;
-  top: -42px;
+  top: -35px;
   padding: 4px 18px;
   background: #ff6d30;
   color: white;
@@ -2750,6 +2764,14 @@ td {
   line-height: 16px;
   letter-spacing: -0.0024em;
   color: #ffffff;
+}
+.vps-time {
+  margin-top: 9px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  color: #adb4c3;
 }
 .property {
   display: flex;
@@ -2866,7 +2888,7 @@ td {
     justify-content: center;
   }
   .vps-price-button-discount {
-    top: -328px;
+    top: -327px;
   }
   .individual-help-content p {
     margin-bottom: 20px;
