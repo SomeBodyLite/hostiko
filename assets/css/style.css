@@ -2707,6 +2707,8 @@ td {
 }
 .vps-tarif-header p.price-water {
   color: #ff6d30;
+  line-height: 0px;
+  margin-top: 8px;
 }
 .vps-tarif-header hr {
   border: none;
