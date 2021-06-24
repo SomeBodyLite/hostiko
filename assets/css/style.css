@@ -30,10 +30,6 @@ svg {
 }
 body {
   width: 100%;
-  background-color: #ffffff;
-}
-body * {
-  z-index: 1;
 }
 a:focus {
   outline: none;
