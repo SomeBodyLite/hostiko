@@ -57,7 +57,7 @@ html {
   background: #ffffff;
 }
 button {
-  transition: all 0.2s ease-in-out;
+  transition: background, border, color 0.2s ease-in-out;
 }
 .header-top {
   height: 45px;
@@ -2637,9 +2637,9 @@ td {
 
   color: #212d3a;
 }
-.tabs > * {
+/* .tabs > * {
   transition: all 0.9s ease-in-out;
-}
+} */
 .tabs-triggers {
   display: flex;
 }
