@@ -720,13 +720,33 @@ button {
   content: url(../images/services-arrow.svg);
 }
 @media (max-width: 991px) {
-  .services-blocks {
+  .main-text {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .services-blocks > div {
+  .services-blocks > div.block-2 {
     margin-right: 0;
+  }
+  .services-blocks {
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services-blocks > div {
     margin-bottom: 20px;
+  }
+  .footer-midle-second {
+    align-items: center;
+  }
+  .footer-button {
+    margin: 28px 0 36px 0;
+  }
+}
+@media (max-width: 767px) {
+  .services-blocks > div {
+    margin-right: 0px;
   }
 }
 .block-1 {
@@ -1363,12 +1383,15 @@ textarea:focus {
     margin-top: 0px;
   }
 }
-@media (max-width: 886px) {
+@media (max-width: 991px) {
   .footer-midle-second {
     flex-direction: column;
   }
   .footer-end {
     margin-left: 0;
+  }
+  .footer-contacts {
+    margin-top: 15px;
   }
 }
 @media (max-width: 500px) {
@@ -2680,6 +2703,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .vps-tarif:last-child {
   border: none;
@@ -2733,6 +2757,14 @@ td {
   color: white;
   border-radius: 0px 0px 2px 2px;
 }
+.vps-price-button-discount-m {
+  padding: 4px 18px;
+  background: #ff6d30;
+  color: white;
+  border-radius: 0px 0px 2px 2px;
+  position: absolute;
+  top: 0px;
+}
 .vps-price h5 {
   font-weight: 500;
   font-size: 19px;
@@ -2778,9 +2810,9 @@ td {
 .property > * {
   margin-right: 50px;
 }
-.property > *:last-child {
+/* .property > *:last-child {
   margin-right: 0px;
-}
+} */
 .property p {
   font-weight: 500;
   font-size: 18px;
@@ -2806,6 +2838,9 @@ td {
   .select-buttons-2,
   .vps-tarif {
     flex-direction: column;
+  }
+  .vps-price {
+    justify-content: center;
   }
   .vps h1,
   .add-services h1 {
@@ -2866,19 +2901,10 @@ td {
     flex-direction: column;
   }
   .property > * {
-    margin: 20px 0;
+    margin: 20px 10px;
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-  .property-1 {
-    margin-right: 115px;
-  }
-  .property-2 {
-    margin-right: 0;
-  }
-  .property-3 {
-    margin-right: 40px;
   }
   .property {
     align-items: center;
@@ -3160,12 +3186,8 @@ td {
     margin-bottom: 15px;
     text-align: center;
   }
-  .dedic-tarifs .property-1,
-  .dedic-tarifs .property-3 {
-    margin-right: 0;
-  }
   .dedic-tarifs .property {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .form__error {
@@ -3780,6 +3802,11 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   color: #4d30ff;
   margin-left: 12px;
 }
+@media (max-width: 573px) {
+  .filters {
+    flex-direction: column;
+  }
+}
 @media (max-width: 991px) {
   .dedic-search {
     margin-bottom: 15px;
@@ -3867,9 +3894,6 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   }
   .accordion-start p {
     font-size: 10px;
-  }
-  .filters {
-    flex-direction: column;
   }
   .price-start,
   .price-end,
