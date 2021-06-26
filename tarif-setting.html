@@ -232,26 +232,39 @@
                   </div>
                 </button>
                 <div class="panel">
-                  <label class="disk-checkbox"
-                    ><p>200 ГБ NVMe</p>
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="disk-checkbox"
-                    ><p>500 ГБ NVMe</p>
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="disk-checkbox"
-                    ><p>200 ГБ SSD</p>
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="disk-checkbox"
-                    ><p>500 ГБ SSD</p>
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
+                  <div class="disk-select">
+                    <label class="disk-checkbox"
+                      ><p>200 ГБ NVMe</p>
+                      <input type="checkbox" checked="checked" name="disk-1" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="disk-count">
+                      <button>-</button>
+                      <input type="text" value="1" />
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div class="disk-select">
+                    <label class="disk-checkbox"
+                      ><p>500 ГБ NVMe</p>
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="disk-select">
+                    <label class="disk-checkbox"
+                      ><p>200 ГБ SSD</p>
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="disk-select">
+                    <label class="disk-checkbox"
+                      ><p>500 ГБ SSD</p>
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="raid-lvl">
@@ -407,10 +420,10 @@
                     >
                       <svg class="icon" style="width: 20px; height: 19px">
                         <use
-                          xlink:href="./assets/images/svg-s.svg#basket"
+                          xlink:href="./assets/images/svg-s.svg#not-basket"
                         ></use>
                       </svg>
-                      <p>Добавить</p>
+                      <p>Удалить</p>
                     </a>
                   </div>
                 </div>
