@@ -26,7 +26,7 @@ const counter = function () {
       }
 
       inp.value = newValue;
-      inp.dispatchEvent(new Event("input")); // ДОБАВИЛ СЮДА ВЫЗОВ ONINPUT
+      inp.dispatchEvent(new Event("input")); // ВЫЗОВ ONINPUT
     });
   });
 
