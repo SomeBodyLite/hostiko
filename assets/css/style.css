@@ -3962,3 +3962,8 @@ input[type="number"]:invalid:not(:placeholder-shown) {
     flex-direction: column;
   }
 }
+@media (min-width: 992px) and (max-width: 1400px) {
+  html {
+    font-size: 15px;
+  }
+}
