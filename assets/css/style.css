@@ -389,8 +389,6 @@ html {
   letter-spacing: -0.0024em;
   color: #5b6987;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
 }
 .blue {
   color: rgba(77, 48, 255, 1);
