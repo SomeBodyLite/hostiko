@@ -57,9 +57,9 @@ html {
   background: #ffffff;
   font-size: 16px;
 }
-button {
+/* button {
   transition: color 0.2s ease-in-out;
-}
+} */
 .header-top {
   height: 45px;
   border-top: 1px solid #f1f1f7;
@@ -407,6 +407,8 @@ button {
 .vps-button button:hover,
 .total-price-4 button:hover {
   background: #3a1aff;
+  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
+  transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .header-button {
   font-style: normal;
@@ -418,8 +420,6 @@ button {
   border-radius: 2px;
   padding: 13px 19px 11px 20px;
   text-decoration: none;
-  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
-  transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .main,
 .call-us,
@@ -2969,7 +2969,6 @@ td {
   display: flex;
   align-items: center;
   stroke: #4d30ff;
-  transition: all 0.3s ease-in-out;
 }
 .tabs-2-triggers__item p {
   font-family: Mazzard;
@@ -2978,15 +2977,16 @@ td {
   line-height: 18px;
   letter-spacing: -0.308571px;
   color: #4d30ff;
-  transition: all 0.3s ease-in-out;
 }
 .tabs-2-triggers__item--active {
   background: #4d30ff;
   border: 1.25px solid #4d30ff;
   stroke: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 .tabs-2-triggers__item--active p {
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 .tabs-2-content__item {
   display: none;
