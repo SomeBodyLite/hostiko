@@ -55,6 +55,7 @@ html {
   max-width: 100%;
   font-family: "Mazzard", sans-serif;
   background: #ffffff;
+  font-size: 1rem;
 }
 button {
   transition: background, border, color 0.2s ease-in-out;
@@ -77,7 +78,7 @@ button {
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
 }
@@ -93,7 +94,7 @@ button {
 }
 .dropdown-content a {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 55px;
   padding: 0px 32px;
   -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
@@ -108,7 +109,7 @@ button {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   outline: none;
   background-color: inherit;
@@ -185,7 +186,7 @@ button {
   display: flex;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   color: #5b6987;
 }
@@ -217,7 +218,7 @@ button {
 .language span,
 .currency span {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 15px;
   color: #adb4c3;
   /* letter-spacing: 0.083871px; */
@@ -341,7 +342,7 @@ button {
   }
   .header-list li {
     margin: 30px 0px 35px 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .header-list li > a > * {
     justify-content: center;
@@ -383,7 +384,7 @@ button {
 .header-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   color: #5b6987;
@@ -410,7 +411,7 @@ button {
 .header-button {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   color: #ffffff;
   background: #4d30ff;
@@ -434,14 +435,14 @@ button {
 .main-text > h1 {
   font-style: normal;
   font-weight: normal;
-  font-size: 53px;
+  font-size: 3.3125rem;
   line-height: 69px;
 }
 @media (min-width: 1400px) {
   .main-text > h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 58px;
+    font-size: 3.625rem;
     line-height: 69px;
   }
 }
@@ -450,7 +451,7 @@ button {
   margin-top: 22px;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   color: #5b6987;
 }
@@ -461,7 +462,7 @@ button {
 .main-buttons > * > a {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   border-radius: 2px;
   text-decoration: none;
@@ -531,7 +532,7 @@ button {
   .number > a,
   .language > span,
   .currency > span {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
   .main-buttons {
     justify-content: center;
@@ -643,7 +644,7 @@ button {
 .faq > h2 {
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 32px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -685,7 +686,7 @@ button {
   margin-top: 18.5px;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 20px;
   letter-spacing: -0.24px;
   color: #ffffff;
@@ -695,7 +696,7 @@ button {
   margin-bottom: 25px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   letter-spacing: -0.24px;
   color: rgba(255, 255, 255, 0.85);
@@ -704,7 +705,7 @@ button {
   display: flex;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: 0.005em;
   color: #ffffff;
@@ -790,7 +791,7 @@ button {
 }
 .bottom-burger > a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   align-items: center;
   color: #5b6987;
@@ -806,7 +807,7 @@ button {
 } */
 .block-text > p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   display: flex;
   align-items: center;
@@ -816,7 +817,7 @@ button {
 .block-text > h3 {
   margin-bottom: 9px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   display: flex;
   align-items: center;
@@ -824,19 +825,19 @@ button {
 }
 @media (min-width: 1400px) {
   .block-text > h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .block-text > p {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .services-blocks > div > h2 {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   .services-blocks > div > h3 {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .services-blocks > div > a {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 .advantages-blocks > div > img {
@@ -884,14 +885,14 @@ button {
 .title h1 {
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 32px;
   letter-spacing: -0.24px;
   color: #212d3a;
 }
 .news-all {
   padding: 10px 0 10px 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 24px;
   letter-spacing: -0.24px;
   text-decoration-line: underline;
@@ -957,7 +958,7 @@ button {
 }
 .news-block-text > a > h2 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 32px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -967,7 +968,7 @@ button {
   color: #4d30ff;
 }
 .news-block-text > h3 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 22px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -976,7 +977,7 @@ button {
   display: flex;
 }
 .news-block-date span {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -991,7 +992,7 @@ button {
 }
 .news-block-button {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 100%;
   display: flex;
   align-items: center;
@@ -1062,7 +1063,7 @@ button {
 .form > h1 {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 39px;
   letter-spacing: -0.290182px;
   color: #212d3a;
@@ -1096,7 +1097,7 @@ button {
 .form-text-1 input,
 .form-text-2 textarea {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 15px;
   display: flex;
   align-items: center;
@@ -1121,7 +1122,7 @@ button {
   height: 125px;
 }
 .message span {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #adb4c3;
   margin-left: 10px;
 }
@@ -1160,7 +1161,7 @@ textarea:focus {
   width: 100%;
   font-family: "Mazzard";
   font-weight: 600;
-  font-size: 21.7636px;
+  font-size: 1.375rem;
   line-height: 26px;
   letter-spacing: -0.0024em;
   color: #ffffff;
@@ -1185,7 +1186,7 @@ textarea:focus {
   user-select: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 16px;
   color: #212d3a;
   -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
@@ -1242,13 +1243,13 @@ textarea:focus {
   border-top: 1px solid #f1f1f7;
 }
 .footer-top h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   color: #212d3a;
 }
 .subscription-input {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   /* or 157% */
 
@@ -1293,7 +1294,7 @@ textarea:focus {
   .footer-top h2 {
     margin-top: 23px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 26px;
     color: #212d3a;
     margin-bottom: 25px;
@@ -1308,7 +1309,7 @@ textarea:focus {
 }
 .footer-nav h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   color: #212d3a;
@@ -1320,7 +1321,7 @@ textarea:focus {
   margin-right: 0;
 }
 .footer-nav a {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 17px;
   letter-spacing: -0.0024em;
   color: #5b6987;
@@ -1355,7 +1356,7 @@ textarea:focus {
 }
 @media (min-width: 1400px) {
   .footer-nav a {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 17px;
     letter-spacing: -0.0024em;
     color: #5b6987;
@@ -1465,7 +1466,7 @@ textarea:focus {
   display: flex;
 } */
 .footer-bottom-start a {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   color: #adb4c3;
   text-decoration: none;
@@ -1507,7 +1508,7 @@ textarea:focus {
   .number > a,
   .language > span,
   .currency > span {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 768px) {
@@ -1516,7 +1517,7 @@ textarea:focus {
   }
   .footer-bottom-start a {
     margin-right: 0px;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .footer-bottom-start a:nth-child(2) {
     margin-top: 10px;
@@ -1542,7 +1543,7 @@ textarea:focus {
   } */
 }
 .call-us {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 50px;
   color: #212d3a;
   text-align: center;
@@ -1575,7 +1576,7 @@ textarea:focus {
 .call-us-button {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   color: #ffffff;
   background: #4d30ff;
@@ -1593,7 +1594,7 @@ textarea:focus {
 .contacts-form-2 p,
 .contacts-form-3 p,
 .adres-1 p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 21px;
   color: #212d3a;
   margin-bottom: 13px;
@@ -1603,7 +1604,7 @@ textarea:focus {
 .contacts-form-2 a,
 .contacts-form-3 a {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 26px;
   display: flex;
   align-items: center;
@@ -1621,7 +1622,7 @@ textarea:focus {
   margin-bottom: 0;
 }
 .contacts-form-1 a:nth-child(3) {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   display: flex;
   align-items: center;
@@ -1638,7 +1639,7 @@ textarea:focus {
 }
 .adres-1 a:nth-child(2) {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 26px;
   display: flex;
   align-items: center;
@@ -1648,7 +1649,7 @@ textarea:focus {
 }
 .adres-1 a:nth-child(3) {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -1719,13 +1720,13 @@ textarea:focus {
 .add-services h1,
 .discounts h1,
 .dedic h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 36px;
   color: #212d3a;
   margin-bottom: 25px;
 }
 .annotation-text p {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 27px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -1734,7 +1735,7 @@ textarea:focus {
   padding: 17px 28px 17px 28px;
   background: #f8faff;
   border-left: 2px solid #4d30ff;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 23px;
   display: flex;
   align-items: center;
@@ -1746,7 +1747,7 @@ textarea:focus {
   margin-bottom: 12px;
 }
 .annotation-date span {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -1782,15 +1783,15 @@ textarea:focus {
   .add-services h1,
   .discounts h1,
   .dedic h1 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 25px;
   }
   .annotation-text p {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 19px;
   }
   .annotation-text blockquote {
-    font-size: 10px;
+    font-size: 0.625rem;
     line-height: 16px;
   }
 }
@@ -1814,7 +1815,7 @@ textarea:focus {
   padding-right: 40px;
 }
 .about-start-text h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 43px;
   display: flex;
   align-items: center;
@@ -1822,7 +1823,7 @@ textarea:focus {
   margin-bottom: 25px;
 }
 .about-start-text p {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 27px;
   /* display: flex;
   align-items: center;
@@ -1842,7 +1843,7 @@ textarea:focus {
   border-radius: 2px;
   padding: 16px 25px 16px 25px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   background: #4d30ff;
@@ -1874,14 +1875,14 @@ textarea:focus {
     padding: 0;
   }
   .about-start-text h1 {
-    font-size: 33px;
+    font-size: 2.0625rem;
     line-height: 39px;
     display: flex;
     align-items: center;
     margin-bottom: 25px;
   }
   .about-start-text p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 25px;
     display: flex;
     align-items: center;
@@ -1890,7 +1891,7 @@ textarea:focus {
     margin-bottom: 40px;
   }
   .about-button {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
   }
   .slider {
@@ -1947,7 +1948,7 @@ textarea:focus {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1975,7 +1976,7 @@ textarea:focus {
   }
 }
 .v-hosting {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 50px;
   color: #212d3a;
   text-align: center;
@@ -2011,7 +2012,7 @@ textarea:focus {
   margin-bottom: 14px;
 }
 .v-hosting h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 27px;
   align-items: center;
   text-align: center;
@@ -2024,7 +2025,7 @@ textarea:focus {
   border: none;
   border-radius: 2px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   color: #ffffff;
@@ -2062,7 +2063,7 @@ textarea:focus {
 }
 .tr-backgrounded p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 16px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -2079,7 +2080,7 @@ textarea:focus {
 }
 .tr-services p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 16px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -2107,14 +2108,14 @@ td {
 } */
 .price-standart h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #212d3a;
   margin-bottom: 7px;
 }
 .price-standart h4 {
-  font-size: 11px;
+  font-size: 0.6875rem;
   line-height: 9px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -2122,21 +2123,21 @@ td {
 }
 .price-standart h5 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 43px;
   letter-spacing: 0.02em;
   color: #4d30ff;
   margin-bottom: 9px;
 }
 .price-standart h5 > span {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   margin-bottom: 9px;
 }
 .price-standart a > button {
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   letter-spacing: -0.0024em;
   color: #4d30ff;
@@ -2150,7 +2151,7 @@ td {
 }
 .price-standart p {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 12px;
   letter-spacing: -0.0024em;
   color: #9483ff;
@@ -2167,10 +2168,10 @@ td {
   }
   .tr-services p,
   .tr-services span {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .tr-backgrounded p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .td-head {
     left: 45px;
@@ -2222,12 +2223,12 @@ td {
   /* padding: 1em 1.5em 1em 0; */
   font-family: "Mazzard", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   color: #212d3a;
 }
 .accordion-start p {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   color: #5b6987;
   font-family: Mazzard;
@@ -2259,7 +2260,7 @@ td {
 .accordion .accordion-content p {
   border-top: 1px solid #f1f1f7;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 22px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -2268,45 +2269,45 @@ td {
 }
 @media (max-width: 1400px) {
   .accordion button .accordion-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .accordion .accordion-content p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media (max-width: 768px) {
   .v-hosting h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
   .v-hosting h2 {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
   }
   .v-hosting-button {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 16px;
   }
   .services > h1,
   .advantages > h1,
   .title > h1,
   .form > h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
   }
   .block-text > h3 {
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 15px;
   }
   .block-text > p {
-    font-size: 11px;
+    font-size: 0.6875rem;
     line-height: 17px;
   }
   .advantages-blocks > * {
     margin-right: 0px;
   }
   .faq h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
     text-align: center;
     margin-bottom: 25px;
@@ -2315,14 +2316,14 @@ td {
     padding: 21px 27px 17px 27px;
   }
   .accordion button .accordion-title {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 12px;
   }
   .accordion button .icon {
     width: 11px;
   }
   .accordion .accordion-content p {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 15px;
     padding: 17px 0 20px 0;
     margin: 0 27px;
@@ -2342,7 +2343,7 @@ td {
 .pricing-list-mobile label {
   font-family: inherit;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 150%;
   color: #adb4c3;
   display: inline-block;
@@ -2372,7 +2373,7 @@ td {
   /* скрыть контент по умолчанию */
   display: none;
   margin: 50px 0;
-  font-size: 16px;
+  font-size: 1rem;
   transition: 0.3s;
   border: 1.36278px solid #f1f1f7;
 
@@ -2393,7 +2394,7 @@ td {
 .tabs-1 > label {
   user-select: none;
   padding: 2px 6px;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 150%;
   cursor: pointer;
   position: relative;
@@ -2401,7 +2402,7 @@ td {
 }
 @media (max-width: 354px) {
   .tabs-1 > label {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 0;
   }
 }
@@ -2424,27 +2425,27 @@ td {
   margin: 38px 0 21px 0;
 }
 .col-12 .price-standart h3 {
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 25px;
 }
 .col-12 .price-standart h4 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 12px;
 }
 .col-12 .price-standart h5 {
-  font-size: 49px;
+  font-size: 3.0625rem;
   line-height: 58px;
 }
 .col-12 .price-standart h5 > span {
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 23px;
 }
 .col-12 .price-standart a > button {
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 22px;
 }
 .col-12 .price-standart p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 16px;
 }
 .mobile-price-content {
@@ -2460,7 +2461,7 @@ td {
 .mobile-price-content p,
 .mobile-price-content span {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 22px;
   letter-spacing: -0.327066px;
   color: #5b6987;
@@ -2475,7 +2476,7 @@ td {
   position: relative;
   /* margin-right: 100px; */
   width: 48%;
-  font-size: 17px;
+  font-size: 1.0625rem;
   left: 40px;
 }
 .col-12 .price-popular button {
@@ -2501,7 +2502,7 @@ td {
 }
 .add-services-line p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -2510,7 +2511,7 @@ td {
   color: #adb4c3;
 }
 .add-services-line em {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -2549,7 +2550,7 @@ td {
   padding: 25px 40px 20px 40px;
   border: 1px solid #f1f1f7;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   text-align: center;
   letter-spacing: -0.24px;
@@ -2596,7 +2597,7 @@ td {
   margin: auto;
 } */
 .individual-help-content p {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 24px;
   letter-spacing: -0.24px;
   color: #212d3a;
@@ -2607,7 +2608,7 @@ td {
   background: #4d30ff;
   border-radius: 2px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   color: #ffffff;
@@ -2630,7 +2631,7 @@ td {
 }
 .country-list-item {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -2654,7 +2655,7 @@ td {
 }
 .select-buttons > div p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   letter-spacing: -0.24px;
 
@@ -2668,7 +2669,7 @@ td {
 }
 .tabs-triggers__item {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -2713,14 +2714,14 @@ td {
 }
 .vps-tarif-header h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.24px;
 
   color: #212d3a;
 }
 .vps-tarif-header p {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -2767,7 +2768,7 @@ td {
 }
 .vps-price h5 {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 23px;
   letter-spacing: 0.02em;
   color: #212d3a;
@@ -2779,7 +2780,7 @@ td {
 }
 .vps-price h5 span {
   font-weight: normal;
-  font-size: 10.8589px;
+  font-size: 0.6875rem;
   line-height: 13px;
   letter-spacing: 0.1em;
 }
@@ -2790,7 +2791,7 @@ td {
   border-radius: 2px;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 16px;
   letter-spacing: -0.0024em;
   color: #ffffff;
@@ -2798,7 +2799,7 @@ td {
 .vps-time {
   margin-top: 9px;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -2815,13 +2816,13 @@ td {
 } */
 .property p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #212d3a;
 }
 .property span {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -2855,25 +2856,25 @@ td {
     margin: auto;
   }
   .select-buttons > div p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
   .tabs-triggers__item,
   .country-list-item {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .vps-tarif-header h3,
   .property p {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
   }
   .add-services-line p,
   .add-services-line em,
   .discounts-blocks p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .vps-tarif-header h3 {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .add-services-line p {
     margin-bottom: 15px;
@@ -2893,7 +2894,7 @@ td {
     border-bottom: 0px;
   }
   .vps-tarif-header p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .vps-tarif-header {
     align-items: center;
@@ -2919,10 +2920,10 @@ td {
     text-align: center;
   }
   .individual-help-content p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .individual-help-content button {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 .dedic-nav {
@@ -2933,7 +2934,7 @@ td {
 .dedic-search-input {
   font-family: inherit;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   padding: 18px 32px;
   background: #fcfcfe;
@@ -2975,7 +2976,7 @@ td {
 .tabs-2-triggers__item p {
   font-family: Mazzard;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.308571px;
   color: #4d30ff;
@@ -3011,14 +3012,14 @@ td {
 }
 .filters-counts h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.308571px;
   margin-right: 25px;
 }
 .filters-counts a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 18px;
   letter-spacing: -0.308571px;
   text-decoration-line: underline;
@@ -3051,7 +3052,7 @@ td {
 }
 .select__current {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   display: flex;
   align-items: center;
@@ -3087,7 +3088,7 @@ td {
 .select__item {
   padding: 8px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   display: flex;
   align-items: center;
@@ -3104,7 +3105,7 @@ td {
 } */
 .filters > div > p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   letter-spacing: -0.308571px;
   color: #212d3a;
@@ -3120,7 +3121,7 @@ td {
   border: none;
   width: 40px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   font-family: inherit;
   text-align: center;
@@ -3134,7 +3135,7 @@ td {
 .price-controls span,
 .ram-controls span,
 .cores-controls span {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   letter-spacing: -0.308571px;
   color: #adb4c3;
@@ -3180,10 +3181,10 @@ td {
   }
   .filters-counts h3,
   .filters-counts a {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .filters > div > p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .filters > div {
     margin-bottom: 15px;
@@ -3196,7 +3197,7 @@ td {
 .form__error {
   color: #e01f3d;
   display: block;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 15px;
   margin: 10px 0 0;
   display: none;
@@ -3248,7 +3249,7 @@ input:invalid:not(:placeholder-shown) {
   justify-content: space-between;
 }
 .tarif-setting div h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 43px;
   color: #212d3a;
   margin-bottom: 25px;
@@ -3263,13 +3264,13 @@ input:invalid:not(:placeholder-shown) {
 }
 .setting-annotation h2 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   color: #212d3a;
   margin-bottom: 12px;
 }
 .setting-annotation li {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 20px;
   color: #5b6987;
 }
@@ -3305,19 +3306,19 @@ input:invalid:not(:placeholder-shown) {
 .proc-name h2,
 .settings-addition-block h2 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 28px;
   color: #212d3a;
 }
 .setting-total-price h3 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #5b6987;
 }
 .setting-total-price p {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -3338,7 +3339,7 @@ input:invalid:not(:placeholder-shown) {
   display: block;
   position: relative;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -3395,7 +3396,7 @@ input:invalid:not(:placeholder-shown) {
   padding: 15px 100px;
   font-family: inherit;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 16px;
   width: 100%;
   text-align: center;
@@ -3412,7 +3413,7 @@ input:invalid:not(:placeholder-shown) {
   border: 1px solid #f1f1f7;
   border-radius: 2px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   letter-spacing: -0.24px;
   color: #adb4c3;
@@ -3436,13 +3437,13 @@ input:invalid:not(:placeholder-shown) {
   outline: none;
   font-family: inherit;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 28px;
   color: #212d3a;
   transition: 0.4s;
 }
 .setting-accordion em {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: -0.0024em;
   color: #adb4c3;
@@ -3453,7 +3454,7 @@ input:invalid:not(:placeholder-shown) {
 }
 .setting-accordion p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   letter-spacing: -0.362133px;
   text-decoration-line: underline;
@@ -3471,7 +3472,7 @@ input:invalid:not(:placeholder-shown) {
 .ico::before {
   content: "Показать";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   letter-spacing: -0.362133px;
   text-decoration-line: underline;
@@ -3497,7 +3498,7 @@ input:invalid:not(:placeholder-shown) {
 
 .disk-checkbox p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #5b6987;
@@ -3510,7 +3511,7 @@ input:invalid:not(:placeholder-shown) {
   padding-left: 35px;
 
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.375rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3769,7 +3770,7 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   background: white;
   padding: 0 7px 0 6px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.308571px;
   color: #adb4c3;
@@ -3794,7 +3795,7 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   background: white;
   padding: 0 7px 0 6px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   letter-spacing: -0.308571px;
   color: #adb4c3;
@@ -3841,7 +3842,7 @@ input[type="number"]:invalid:not(:placeholder-shown) {
 }
 .addition-button p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 16px;
   letter-spacing: -0.362133px;
   text-decoration-line: underline;
@@ -3871,16 +3872,16 @@ input[type="number"]:invalid:not(:placeholder-shown) {
   .server-name h2,
   .proc-name h2,
   .settings-addition-block h2 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 18px;
   }
   .setting-total-price h3 {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
   }
   .setting-total-price p,
   .radio input + span {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 12px;
   }
   .radio,
@@ -3889,7 +3890,7 @@ input[type="number"]:invalid:not(:placeholder-shown) {
     display: flex;
   }
   .total-price-4 a button {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 10px;
   }
   .radio input + span::before,
@@ -3903,7 +3904,7 @@ input[type="number"]:invalid:not(:placeholder-shown) {
     margin-left: 4px;
   }
   .tarif-setting div h1 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 25px;
     text-align: center;
   }
@@ -3923,23 +3924,23 @@ input[type="number"]:invalid:not(:placeholder-shown) {
     margin-bottom: 15px;
   }
   .setting-accordion em {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 14px;
   }
   .setting-accordion {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .ico::before {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .panel p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .addition-button p {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .accordion-start p {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .price-start,
   .price-end,
