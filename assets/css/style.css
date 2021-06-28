@@ -222,13 +222,13 @@ html {
   line-height: 15px;
   color: #adb4c3;
   /* letter-spacing: 0.083871px; */
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
 }
 .number > a:hover,
 .language span:hover,
 .currency span:hover {
   color: #cad2e4;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 .currency .dropdown-content {
   min-width: 140px;
@@ -473,6 +473,8 @@ html {
 .main-button-1 > a:hover,
 .about-button:hover {
   background: #3a1aff;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
 }
 .main-button-1 > a {
   color: #ffffff;
@@ -495,7 +497,8 @@ html {
 .main-button-2 > a:hover,
 .about-button-2:hover {
   color: rgb(105, 82, 255);
-
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
   background: #f8faff;
 }
 .main-button-2 > a {
@@ -1249,10 +1252,6 @@ textarea:focus {
   font-family: inherit;
   font-size: 0.875rem;
   line-height: 22px;
-  /* or 157% */
-
-  /* display: flex;
-  align-items: center; */
   height: 55px;
   width: 435px;
   padding: 0 27px 0 27px;
@@ -1324,11 +1323,11 @@ textarea:focus {
   letter-spacing: -0.0024em;
   color: #5b6987;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
 }
 .footer-nav a:hover {
   color: rgba(77, 48, 255, 1);
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .footer-nav li {
@@ -1441,11 +1440,6 @@ textarea:focus {
 .footer-payments > div > img {
   opacity: 25%;
   pointer-events: all;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
 }
@@ -1453,6 +1447,8 @@ textarea:focus {
   opacity: 45%;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .footer-bottom {
   border-top: 1px solid #f1f1f7;
@@ -1469,11 +1465,11 @@ textarea:focus {
   color: #adb4c3;
   text-decoration: none;
   margin-right: 25px;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
 }
 .footer-bottom-start a:hover {
   color: rgba(77, 48, 255, 1);
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 .footer-bottom-start a:last-child {
   margin-right: 0px;
@@ -1486,11 +1482,11 @@ textarea:focus {
   width: 24px;
   height: 24px;
   fill: #adb4c3;
-  -webkit-transition: fill 0.2s ease-out;
-  transition: fill 0.2s ease-out;
 }
 .contacts-icon:hover {
   fill: rgba(77, 48, 255, 1);
+  -webkit-transition: fill 0.2s ease-out;
+  transition: fill 0.2s ease-out;
 }
 .footer-socials > * {
   margin-right: 25px;
@@ -1846,16 +1842,12 @@ textarea:focus {
   letter-spacing: -0.0024em;
   background: #4d30ff;
   color: #ffffff;
-  -webkit-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
 }
 .about-button-2 {
   padding: 16px 60px 16px 60px;
   color: #4d30ff;
   background: #ffffff;
   border: 1px solid #f1f1f7;
-  -webkit-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
 }
 @media (max-width: 991px) {
   .about::after,
@@ -2029,8 +2021,6 @@ textarea:focus {
   color: #ffffff;
   padding: 16px 44px 16px 44px;
   background: #4d30ff;
-  -webkit-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
 }
 .pricing-list .price-popular {
   border: 2px solid #4d30ff;
@@ -2144,8 +2134,6 @@ td {
   border: none;
   padding: 11px 56px 11px 56px;
   margin-bottom: 15px;
-  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
-  transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .price-standart p {
   font-weight: 500;
@@ -2636,7 +2624,6 @@ td {
   padding: 4px 10px;
   border-bottom: 1px solid #f1f1f7;
   cursor: pointer;
-  transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .country-list-item img,
 .vps-tarif-header img {
@@ -2646,6 +2633,7 @@ td {
 .country-list-item:hover,
 .tabs-triggers__item:hover {
   border-bottom: 2px solid #4d30ff;
+  transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .item-active {
   color: #4d30ff;
@@ -2677,7 +2665,6 @@ td {
   flex-grow: 1;
   border-bottom: 1px solid #f1f1f7;
   cursor: pointer;
-  transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .tabs-content {
@@ -3438,7 +3425,6 @@ input:invalid:not(:placeholder-shown) {
   font-size: 1.5rem;
   line-height: 28px;
   color: #212d3a;
-  transition: 0.4s;
 }
 .setting-accordion em {
   font-size: 1.125rem;
@@ -3460,7 +3446,7 @@ input:invalid:not(:placeholder-shown) {
   margin-right: 18px;
 }
 .setting-accordion .icon {
-  transition: 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 /* .active,
 .setting-accordion:hover {
