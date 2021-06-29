@@ -1257,8 +1257,8 @@ textarea:focus {
   border: 1px solid #f1f1f7;
   box-sizing: border-box;
   border-radius: 2px;
-  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
-  transition: all 0.2s ease-out, color 0.2s ease-out;
+  /* -webkit-transition: background, border-color, border, color 0.2s ease-out;
+  transition: background, border-color, border, color 0.2s ease-out; */
 }
 .subscription-button {
   margin-left: 7px;
@@ -1443,10 +1443,8 @@ textarea:focus {
 }
 .footer-payments > div > img:hover {
   opacity: 45%;
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: filter, opacity 0.3s;
 }
 .footer-bottom {
   border-top: 1px solid #f1f1f7;
@@ -2220,7 +2218,7 @@ td {
 .accordion button .icon {
   display: inline-block;
   right: 0;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .accordion button[aria-expanded="true"] {
   color: #03b5d2;
